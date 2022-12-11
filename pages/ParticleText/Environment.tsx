@@ -51,6 +51,7 @@ export default class Environment {
 
   render() {
     this.createParticles.render();
+    this.renderer.setClearColor(0x000000, 0.2);
     this.renderer.render(this.scene, this.camera);
   }
 
@@ -113,7 +114,7 @@ class CreateParticles {
       amount: 1500,
       particleSize: 1,
       particleColor: 0xffffff,
-      textSize: Math.min(16, window.screen.width / 15 / 8),
+      textSize: Math.min(20, window.screen.width / 15 / 8),
       area: 250,
       ease: 0.05,
     };

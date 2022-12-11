@@ -26,13 +26,17 @@ export default function ParticleText({ text }: {text: string}) {
     var typo: Font;
     const loader = new FontLoader(manager);
     const font = loader.load(
-      "https://res.cloudinary.com/dydre7amr/raw/upload/v1612950355/font_zsd4dr.json",
+      "./static/Black Jack_Regular.json",
+      // "./static/Dancing Script OT_Regular.json",
+      // "./static/JetBrains Mono Medium_Italic.json",
+      // "./static/JetBrains Mono Medium_Regular.json",
+      // "./static/font.json",
       function (font) {
         typo = font;
       }
     );
     const particle = new THREE.TextureLoader(manager).load(
-      "https://res.cloudinary.com/dfvtkoboz/image/upload/v1605013866/particle_a64uzf.png"
+      "./static/particle.png"
     );
   };
   useEffect(() => preload());
