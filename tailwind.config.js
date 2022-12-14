@@ -17,6 +17,9 @@ module.exports = {
       height: {
         '128': '32rem'
       }
+    },
+    minHeight:{
+      "80screen": '80vh'
     }
   },
   plugins: [],

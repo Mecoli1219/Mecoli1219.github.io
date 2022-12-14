@@ -35,7 +35,7 @@ function About() {
               </div>
             </div>
             {/* Image Part */}
-            <div className="hidden lg:block relative w-full h-128 md:w-6/12 -mr-20 mt-20 mb-10">
+            <div className="hidden lg:block relative w-full h-128 md:w-6/12 -mr-20 mt-20 mb-10 min-h-80screen">
               <div className="w-3/4 bg-black h-full overflow-hidden rounded-3xl ">
                 <img src="/static/avatar.jpg" alt="avatar" className="object-cover w-full object-bottom"/>
               </div>
