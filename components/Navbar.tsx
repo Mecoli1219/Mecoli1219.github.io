@@ -14,7 +14,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-10">
+    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-10 ">
       <div className="flex  md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
@@ -53,7 +53,7 @@ export default function Navbar() {
               </svg>
             )}
           </Link>
-          <Link
+          {/* <Link
             href="/projects"
             className={`text-base  ${
               router.asPath === "/projects"
@@ -104,15 +104,15 @@ export default function Navbar() {
             )}
           </Link>
           <Link
-            href="/contact"
+            href="/research"
             className={`text-base  ${
-              router.asPath === "/contact"
+              router.asPath === "/research"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
           >
-            Contact
-            {router.asPath === "/contact" && (
+            Research
+            {router.asPath === "/research" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -127,7 +127,7 @@ export default function Navbar() {
                 />
               </svg>
             )}
-          </Link>
+          </Link> */}
         </div>
 
         <div className="space-x-4 flex flex-row items-center">
@@ -198,10 +198,10 @@ export default function Navbar() {
           Experience
         </Link>
         <Link
-          href="/contact"
+          href="/research"
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
-          Contact
+          Research
         </Link>
       </div>
     </div>
