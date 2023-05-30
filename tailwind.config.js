@@ -18,8 +18,10 @@ module.exports = {
         '128': '32rem'
       }
     },
-    minHeight:{
-      "80screen": '80vh'
+    minHeight: {
+      "80screen": '80vh',
+      "60screen": '60vh',
+      "screen": '100vh',
     }
   },
   plugins: [],

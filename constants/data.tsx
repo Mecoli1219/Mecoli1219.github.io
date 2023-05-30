@@ -1,6 +1,6 @@
 const userData = {
   githubUsername: "mecoli1219",
-  name: "Chun-Mao, Lai",
+  name: "Chun-Mao Lai",
   designation: "Full Stack Developer & Deep Learning Researcher",
   avatarUrl: "/avatar.png",
   email: "michaellai901026@gmail.com",
@@ -19,7 +19,7 @@ const userData = {
     description: [
       `Hello! My name is Chun-Mao, Lai, and I am a under-graduate student in Electrical Engineering Department in National Taiwan University since 2020. I've started learning programming since I graduated from high school, and I've tried different kinds of programming language and several applications by myself. Although I am a EE student, I have more passion in Computer Science.`,
       `I joined the Students' Association Information Department(SAID) and learning web development in my freshman year, and participant in several projects in my second year. Eventually, I become minister of SAID and lead the department to build several useful websites.`,
-      `Except from Web Development, I also participant in several research in different domains, including Convex Optimization, Natural Language Programming, Reinforcement Learning and Computer Vision. In Natural Language Programming, I proposed a framework to implement data augmentation on MultiWOZ dataset, and reach the state-of-art performance of Dialogue State Tracking on MultiWOZ dataset.`,
+      `Except from Web Development, I also participant in several research in different domains, including Natural Language Programming, Reinforcement Learning and Computer Vision.`,
       `During these years of learning, I've been coding in Javascript, Typescript, React, Node.js, Express, Python, MongoDB, MySQL, Tailwind, C, C++, C#, Verilog, Matlab, tensorflow programming language etc to name a few. I would like to learn more technique and build something big and interesting!`,
     ],
     currentProject: "Tailwind Master Kit",

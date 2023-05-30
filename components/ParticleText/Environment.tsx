@@ -148,6 +148,9 @@ class CreateParticles {
     document.addEventListener("mousedown", this.onMouseDown.bind(this));
     document.addEventListener("mousemove", this.onMouseMove.bind(this));
     document.addEventListener("mouseup", this.onMouseUp.bind(this));
+    document.addEventListener("touchstart", this.onTouchStart.bind(this));
+    document.addEventListener("touchmove", this.onTouchMove.bind(this));
+    document.addEventListener("touchend", this.onTouchEnd.bind(this));
   }
 
   onMouseDown(event: MouseEvent) {
@@ -173,6 +176,33 @@ class CreateParticles {
   onMouseMove(event: MouseEvent) {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  }
+
+  onTouchStart(event: TouchEvent) {
+    this.mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
+
+    const vector = new THREE.Vector3(this.mouse.x, this.mouse.y, 0.5);
+    vector.unproject(this.camera);
+    const dir = vector.sub(this.camera.position).normalize();
+    const distance = -this.camera.position.z / dir.z;
+    this.currentPosition = this.camera.position.clone().add(dir.multiplyScalar(distance));
+
+    this.particles.geometry.attributes.position;
+    this.buttom = true;
+    this.data.ease = 0.01;
+  }
+
+  onTouchEnd() {
+    console.log("touch end");
+    this.buttom = false;
+    this.data.ease = 0.05;
+  }
+
+  onTouchMove(event: TouchEvent) {
+    console.log("touch move");
+    this.mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
   }
 
   render() {
