@@ -25,7 +25,7 @@ type ResearchDataType = {
 
 const researchData: ResearchDataType = {
   interest: [
-    "I'm interested in computer vision, machine learning, optimization, and image processing. Representative papers are highlighted.",
+    "I have a keen interest in exploring various aspects of machine learning, such as natural language processing and reinforcement learning. Representative papers are highlighted.",
   ],
   researchList: [
     {

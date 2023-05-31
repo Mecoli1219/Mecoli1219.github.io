@@ -7,5 +7,5 @@ pnpm dev
 ## deploy this branch
 
 ```
-pnpm deploy
+pnpm run deploy
 ```
