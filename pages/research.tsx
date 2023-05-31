@@ -27,7 +27,7 @@ function Research() {
                 <div className="h-12"></div>
                 {researchData.researchList.map((research: ResearchType) => {
                   return (
-                    <div className="flex flex-row p-5">
+                    <div className="flex flex-row p-5" key="">
                       {/* <div className="" key=""> */}
                       <img src={research.image} className="pr-5 max-h-64 basis-1/2 md:basis-1/4 object-cover overflow-hidden mx-auto" alt="" />
                       {/* </div> */}
