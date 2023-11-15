@@ -11,10 +11,10 @@ export type ResearchType = {
   year: string,
   description: string,
   others: {
-    "project page"?: string,
+    "Project Page"?: string,
     arXiv?: string,
-    video?: string,
-    code?: string,
+    Video?: string,
+    Code?: string,
   },
 }
 
@@ -29,6 +29,82 @@ const researchData: ResearchDataType = {
   ],
   researchList: [
     {
+      image: "static/research/av-superb.png",
+      title: "AV-SUPERB: A Multi-Task Evaluation Benchmark for Audio-Visual Representation Models",
+      link: "https://av.superbbenchmark.org/",
+      authors: [
+        // Yuan Tseng, Layne Berry, Yi-Ting Chen, I-Hsiang Chiu, Hsuan-Hao Lin, Max Liu, Puyuan Peng, Yi-Jen Shih, Hung-Yu Wang, Haibin Wu, Po-Yao Huang, Chun-Mao Lai, Shang-Wen Li, David Harwath, Yu Tsao, Shinji Watanabe, Abdelrahman Mohamed, Chi-Luen Feng, Hung-yi Lee
+        {
+          name: "Yuan Tseng",
+        },
+        {
+          name: "Layne Berry*",
+        },
+        {
+          name: "Yi-Ting Chen*",
+        },
+        {
+          name: "I-Hsiang Chiu*",
+        },
+        {
+          name: "Hsuan-Hao Lin*",
+        },
+        {
+          name: "Max Liu*",
+        },
+        {
+          name: "Puyuan Peng*",
+        },
+        {
+          name: "Yi-Jen Shih*",
+        },
+        {
+          name: "Hung-Yu Wang*",
+        },
+        {
+          name: "Haibin Wu*",
+        },
+        {
+          name: "Po-Yao Huang",
+        },
+        {
+          name: "Chun-Mao Lai",
+          link: "https://www.mecoli.net/",
+          me: true,
+        },
+        {
+          name: "Shang-Wen Li",
+        },
+        {
+          name: "David Harwath",
+        },
+        {
+          name: "Yu Tsao",
+        },
+        {
+          name: "Shinji Watanabe",
+        },
+        {
+          name: "Abdelrahman Mohamed",
+        },
+        {
+          name: "Chi-Luen Feng",
+        },
+        {
+          name: "Hung-yi Lee",
+          link: "https://speech.ee.ntu.edu.tw/~hylee/index.php"
+        },
+      ],
+      journal: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      year: "2024",
+      description: "We propose the AV-SUPERB benchmark that enables general-purpose evaluation of unimodal audio/visual and bimodal fusion representations on 7 datasets covering 5 audio-visual tasks in speech and audio processing.",
+      others: {
+        "Project Page": "https://av.superbbenchmark.org/",
+        arXiv: "https://arxiv.org/abs/2309.10787",
+        Code: "https://github.com/roger-tseng/av-superb"
+      }
+    },
+    {
       image: "static/research/dbc.png",
       title: "Diffusion Model-Augmented Behavioral Cloning",
       link: "https://nturobotlearninglab.github.io/dbc/",
@@ -41,10 +117,11 @@ const researchData: ResearchDataType = {
         },
         {
           name: "Ming-Hao Hsu",
+          link: "https://qaz159qaz159.github.io/"
         },
         {
           name: "Chun-Mao Lai",
-          link: "https://mecoli1219.github.io/",
+          link: "https://www.mecoli.net/",
           me: true,
         },
         {
@@ -52,11 +129,11 @@ const researchData: ResearchDataType = {
           link: "https://shaohua0116.github.io/",
         },
       ],
-      journal: "arXiv",
+      journal: "Frontiers4LCD Workshop at International Conference on Machine Learning (ICML)",
       year: "2023",
       description: "We propose a novel imitation learning method combining with diffusion model. We show that our method can achieve better performance than previous imitation learning methods.",
       others: {
-        "project page": "https://nturobotlearninglab.github.io/dbc/",
+        "Project Page": "https://nturobotlearninglab.github.io/dbc/",
         arXiv: "https://arxiv.org/abs/2302.13335",
       }
     },
@@ -67,11 +144,12 @@ const researchData: ResearchDataType = {
       authors: [
         {
           name: "Chun-Mao Lai*",
-          link: "https://mecoli1219.github.io/",
+          link: "https://www.mecoli.net/",
           me: true,
         },
         {
           name: "Ming-Hao Hsu*",
+          link: "https://qaz159qaz159.github.io/"
         },
         {
           name: "Chao-Wei Huang",
@@ -82,12 +160,12 @@ const researchData: ResearchDataType = {
           link: "https://www.csie.ntu.edu.tw/~yvchen/",
         },
       ],
-      journal: "SIGDIAL",
+      journal: "23rd Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL)",
       year: "2022",
       description: "We propose a data augmentation method for DST, which improve the state-of-the-art performance on MultiWOZ 2.1.",
       others: {
         arXiv: "https://arxiv.org/abs/2207.12757",
-        code: "https://github.com/miulab/cuda-dst"
+        Code: "https://github.com/miulab/cuda-dst"
       }
     }
   ]
