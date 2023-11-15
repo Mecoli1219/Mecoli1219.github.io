@@ -1,0 +1,259 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{geometry}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Set margins
+\geometry{margin=1in, tmargin=1in, bmargin=1in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+%\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textbf{#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\huge \scshape Chun-Mao (Michael) Lai} \\ \vspace{3pt}
+    \href{tel:217-819-9616}{\raisebox{-0.1\height}\faPhone\ \underline{217-819-9616}} ~ 
+    \href{mailto:michaellai901026@gmail.com}{\raisebox{-0.1\height}\faEnvelope\  \underline{michaellai901026@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/chun-mao-lai-aa1966229}{\raisebox{-0.1\height}\faLinkedin\ \underline{Chun-Mao Lai}}  ~
+    \href{https://github.com/Mecoli1219}{\raisebox{-0.1\height}\faGithub\ \underline{Mecoli1219}} ~
+    \href{https://www.mecoli.net}{\raisebox{-0.1\height}\faHome\ \underline{www.mecoli.net}}\\
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois Urbana-Champaign}{Urbana, IL}
+      {Exchange Program in Electrical and Computer Engineering}{\textnormal{Aug 2023 -- Dec 2023}}
+      % \resumeItemListStart
+      %   \resumeItem{Courses: CS425/ECE428 Distributed Systems, CS446/ECE449 Machine Learning, ECE484 The Principles of Safe Autonomics}
+      % \resumeItemListEnd
+    \resumeSubheading
+      {National Taiwan University}{Taiwan}
+      {B.S. in Electrical Engineering}{\textnormal{Sep 2020 -- Jun 2024}}
+      \resumeItemListStart
+      \resumeItem{GPA: 4.2/4.3; Received one Presidential Award and 2023 NTUEE Undergraduate Innovation Award (3rd Prize)}
+        %\resumeItem{Related Courses: Machine Learning, Web Retrieval and Mining, Natural Language Processing, Applied Deep Learning, Introduction to Digital Speech Processing, Scientific Computing, Statistics and Life, Fintech Mining and Machine Learning, Data Structure and Algorithm, Operating Systems, Network Administration and System Administration, etc.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------TECH SKILLS-----------
+\section{TECHNICAL SKILLS}
+
+\small{
+  \begin{tabularx}{\linewidth}{@{} p{3.2cm} X @{}}
+    \textbf{Machine Learning} & Natural Language Processing, Computer Vision, Reinforcement Learning, Robotic Learning \\
+    \textbf{Programming} & Python, C, HTML/CSS, Javascript/Typescript, SQL, LaTex \\
+    \textbf{Libraries} & Pytorch, Tensorflow, Huggingface, React, NextJS, expressJS, Flask, GraphQL \\
+    \textbf{Softwares} & Git, Conda, Docker, Linux, MacOS \\
+    \textbf{Spoken Languages} & Mandarin Chinese (Native), English (Fluent) \\
+  \end{tabularx}
+  }
+  
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Taiwan Semiconductor Manufacturing Company(TSMC)}{Taiwan}
+      {Machine Learning Research Engineer Intern}{\textnormal{Jun 2023 -- Jul 2023}}
+      \resumeItemListStart
+      \resumeItem{Designed a pairwise style transfer model for defect detection in extremely high-resolution images (up to 3M pixels) and achieved an impressive maximum residue error of 0.1.}
+      \resumeItem{Enhanced the data pipeline by implementing MPI for image extraction and preprocessing, reducing processing time by 75\%. }
+      \resumeItem {Implemented distributed computing for a TensorFlow model, harnessing the power of 2 nodes, each equipped with 4 A100 GPUs, to significantly boost processing efficiency.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PUBLICATIONS-----------
+\section{PUBLICATIONS}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+      {Diffusion Model-Augmented Behavioral Cloning}{Co-Author}
+      {The Frontiers4LCD International Workshop on Diffusion Models (\textbf{ICML Workshop 2023})}{\textnormal{July 2023}}
+      \vspace{-2pt}
+      \resumeItemListStart
+        \resumeItem{Designed a distinctive learning objective, harnessing diffusion models to guide policy learning and achieving superior performance in continuous control domains. (\textit{\href{https://nturobotlearninglab.github.io/dbc/}{https://nturobotlearninglab.github.io/dbc/}})}
+        % \resumeItem{Proposed a training framework to improve Out-of-Distribution Generalization for Tabular Prediction, Image Classification, Natural Language Inference, Regression, etc. (\textit{\href{https://openreview.net/forum?id=FDmIo6o09H}{https://openreview.net/forum?id=FDmIo6o09H}})}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Controllable User Dialogue Act Augmentation for Dialogue State Tracking}{First Author}
+      {The 23rd Annual Meeting of the Special Interest Group on Discourse and Dialogue (\textbf{SIGDIAL 2022})}{\textnormal{Sep 2022}}
+      \vspace{-2pt}
+      \resumeItemListStart
+        \resumeItem{Introduced a data-augmented framework to diversify user utterances, enhancing state trackers' robustness and achieving state-of-the-art performance in dialogue state tracking, specifically on MultiWOZ 2.1. (\textit{\href{https://arxiv.org/abs/2207.12757v1}{https://arxiv.org/abs/2207.12757v1}})}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {AV-SUPERB: A Multi-Task Evaluation Benchmark for Audio-Visual Representation Models}{Co-Author}
+      {2024 IEEE International Conference on Acoustics, Speech and Signal Processing (\textbf{ICASSP 2024, Under Review})}{\textnormal{}}
+      \vspace{-2pt}
+      \resumeItemListStart
+        \resumeItem{Constructed a benchmark for audio-visual representation learning, including 5 speech and audio processing tasks and 7 datasets, to facilitate the development of audio-visual models. (\textit{\href{https://av.superbbenchmark.org/}{https://av.superbbenchmark.org/}})}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------INVOLVEMENT---------------
+\section{EXTRACURRICULAR ACTIVITIES \& LEADERSHIP}
+    \resumeSubHeadingListStart
+        \resumeSubheading{National Taiwan University Electrical Engineering Light Dance}{Taiwan}
+        {Software Leader, \textit{\href{https://www.youtube.com/@ntueelightdance6849}{https://www.youtube.com/@ntueelightdance6849}}}{\textnormal{Sep 2021 -- Jul 2023}}
+            \resumeItemListStart
+                \resumeItem{Built the backend service from scratch, enabling the storage of light dance data (up to 5GB) on a server.}
+                \resumeItem{Designed the data structure for the entire light dance system, optimizing data querying and post-processing, resulting in a seamless user experience with no perceptible latency.}
+                \resumeItem{Led a 25-member team responsible for maintaining the Light Dance editor service, overseeing a codebase of 800,000 lines.}
+                \resumeItem{Achieved 36,000 views on YouTube for the Light Dance video in 2022.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+    \resumeSubheading{NTUEE Student Association Information Department}{Taiwan}
+        {Minister, \textit{\href{https://github.com/NTUEEInfoDep}{https://github.com/NTUEEInfoDep}}}{\textnormal{Sep 2020 -- Jul 2023}}
+        \resumeItemListStart
+            \resumeItem{Led a team of 40 individuals in producing and maintaining student association websites and services, which included 8 long-standing services and various activity-based services, benefiting over 1,000 students.}
+            \resumeItem{Offered technical courses to NTUEE students and trained department members in website and service development.}
+            \resumeItem{Designed and implemented an algorithm based on stable marriage problem to ensure accurate distribution among 1,000 department students on a course pre-select website.}
+            \resumeItem{Contributed to various departmental activities, including NTUEE Week, NTUEE Light Dance, MakeNTU, and more.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+%
+\section{Special Awards}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{2016 International Junior Science Olympiad (IJSO)}}{}
+    \resumeItemListStart  
+      \resumeItem{3 individual gold medals: 1st Prize, Best Theoretical Winner, Best Overall Winner}
+      \resumeItem{1 team gold medal: Country Winner}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+% \small{
+%   \begin{tabularx}{\linewidth}{@{} p{9cm} X @{}}
+%     \textbf{2016 International Junior Science Olympiad (IJSO)} & 1st Prize, Best Theoretical Winner, Best Overall Winner, Country Winner \\
+%     % \textbf{2023 NTUEE Undergraduate Innovation Award} & 3rd Prize \\
+%   \end{tabularx}
+%   }
+
+\end{document}
+
