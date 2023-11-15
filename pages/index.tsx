@@ -23,5 +23,6 @@ function Home() {
     </>
   )
 }
+Home.transparentNavbar = true;
 
 export default Home

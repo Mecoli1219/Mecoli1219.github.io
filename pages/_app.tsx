@@ -4,7 +4,13 @@ import Head from 'next/head';
 import { ThemeProvider } from "next-themes";
 import Navbar from '../components/Navbar';
 
-export default function App({ Component, pageProps }: AppProps) {
+type CustomAppProps = AppProps & {
+  Component: {
+    transparentNavbar?: boolean;
+  };
+};
+
+export default function App({ Component, pageProps }: CustomAppProps) {
   return (
     <ThemeProvider defaultTheme="light" attribute="class">
       <Head>
@@ -23,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta httpEquiv="Permissions-Policy" content="interest-cohort=()"></meta>
       </Head>
       {
-        Component.name == "Home" ? <>
+        Component.transparentNavbar ? <>
           <Navbar />
           <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50">
             <Component {...pageProps} />

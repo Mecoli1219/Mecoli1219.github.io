@@ -192,7 +192,7 @@ export default function Navbar() {
 
 
       </div>
-      <div className={`max-w-full mx-auto relative ${openMenu ? "top-32" : " top-0"} left-0 right-0 h-32 bg-transparent`}></div>
+      <div className={`max-w-full mx-auto relative ${openMenu ? "top-32" : " top-0"} left-0 right-0 h-32`}></div>
 
     </>
   );
