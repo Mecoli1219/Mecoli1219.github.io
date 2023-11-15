@@ -75,6 +75,7 @@ const userData = {
     instagram: "https://www.instagram.com/michaellai901026/",
     github: "https://github.com/mecoli1219",
     facebook: "https://www.facebook.com/michael.lai.1291/",
+    linkin: "https://www.linkedin.com/in/chun-mao-lai-aa1966229/"
   },
 };
 
