@@ -55,7 +55,7 @@ function Research() {
                           )
                         })
                       }
-                      <div className="text-base text-black dark:text-gray-300 font-normal" >
+                      <div className="text-base text-black dark:text-white font-normal" >
                         {research.journal}, {research.year}
                       </div>
                       <div className="text-base text-gray-500 dark:text-gray-300 py-2 font-light max-sm:hidden " key="">

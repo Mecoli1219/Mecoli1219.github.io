@@ -45,6 +45,10 @@ module.exports = {
         "0.5font": "0.5em",
         "0.8font": "0.8em",
         "95": "95%",
+        "xl": "36rem",
+        "2xl": "42rem",
+        "3xl": "48rem",
+        "4xl": "56rem",
       },
       zIndex: {
         "60": "60",
@@ -69,6 +73,7 @@ module.exports = {
         '1/2': '50%',
         '3/4': '75%',
         '95': '95%',
+        'screen': '100vw',
         '95screen': '95vw',
         '80screen': '80vw',
         '36': '144px',

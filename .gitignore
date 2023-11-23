@@ -109,3 +109,4 @@ dist
 *.out
 *.log
 *.synctex.gz
+*.DS_Store
