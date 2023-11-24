@@ -18,7 +18,8 @@ export default function Navbar() {
   }, []);
   let items: [string, string][] = [
     ["About", "/about"],
-    ["Research", "/research"],
+    ["Experience", "/experience"],
+    ["Publications", "/publications"],
     ["Resume", "/resume/main.pdf"],
   ];
 
@@ -55,7 +56,7 @@ export default function Navbar() {
                 <div className="font-semibold text-xl text-gray-700 dark:text-white inline">
                   {userData.name}
                 </div>
-                <div className="text-xl font-light text-gray-500 dark:text-gray-300 inline pl-1"> Website
+                <div className="text-xl font-light text-gray-500 dark:text-gray-300 inline pl-1 max-sm:hidden"> Website
                 </div>
                 {/* <p className="hidden md:block text-base font-light text-gray-500 dark:text-gray-300">
                   {userData.designation}
@@ -70,8 +71,8 @@ export default function Navbar() {
                     href={item[1]}
                     key={item[0]}
                     className={`text-base hover:bg-white hover:dark:bg-gray-800 hover:shadow-lg px-2 py-3 rounded-lg border border-transparent ${router.asPath === item[1]
-                      ? "text-gray-800 font-bold dark:text-gray-400"
-                      : "text-gray-600 dark:text-gray-300 font-light"
+                      ? "text-gray-800 font-bold dark:text-gray-200"
+                      : "text-gray-600 dark:text-gray-400 font-light"
                       }`}
                   >
                     {item[0]}

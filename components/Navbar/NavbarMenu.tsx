@@ -25,8 +25,8 @@ export const NavbarMenu = ({ setOpenMenu, items, theme, setTheme, mounted }: Nav
                     return <Link
                         href={item[1]}
                         className={`text-base hover:bg-[#F1F1F1] hover:dark:bg-gray-700 hover:shadow-lg px-3 py-2 rounded-lg border border-transparent ${router.asPath === item[1]
-                            ? "block text-gray-800 dark:text-gray-400 font-bold"
-                            : "block text-gray-600 dark:text-gray-300 font-normal "
+                            ? "block text-gray-800 dark:text-gray-200 font-bold"
+                            : "block text-gray-600 dark:text-gray-400 font-normal "
                             }`}
                         key={index}
                         onClick={() => setOpenMenu(false)}

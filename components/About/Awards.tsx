@@ -19,7 +19,7 @@ export default function Awards() {
                             Third Prize Project
                         </td>
                     </tr>
-                    <tr className="flex flex-row border-y px-2 dark:bg-gray-800 bg-gray-100 p-2">
+                    <tr className="flex flex-row border-b px-2 p-2">
                         <th className="w-16 flex items-center">
                             2020
                         </th>
@@ -30,7 +30,7 @@ export default function Awards() {
                             Ranking 3 / 182 in 2020 Fall Semester
                         </td>
                     </tr>
-                    <tr className="flex flex-row border-y px-2 dark:bg-gray-800 bg-gray-100 p-2">
+                    <tr className="flex flex-row border-b px-2 dark:bg-gray-800 bg-gray-100 p-2">
                         <th className="w-16 flex items-center">
                             2016
                         </th>
