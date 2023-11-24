@@ -3,7 +3,7 @@ import Research from "../components/Experience/Research";
 function Experience() {
   return (
     <>
-      <div className="mx-auto flex flex-col max-w-screen xl:max-w-4xl lg:max-w-3xl md:max-w-2xl">
+      <div className="mx-auto flex flex-col max-w-screen xl:max-w-4xl lg:max-w-3xl md:max-w-2xl px-5">
         <h1 className="text-5xl md:text-5xl font-bold pt-10 pb-5 text-center">
           Experience.
         </h1>

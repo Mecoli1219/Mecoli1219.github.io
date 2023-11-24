@@ -29,7 +29,7 @@ const researchData: ResearchDataType = {
   ],
   researchList: [
     {
-      image: "static/research/av-superb.png",
+      image: "/static/research/av-superb.png",
       title: "AV-SUPERB: A Multi-Task Evaluation Benchmark for Audio-Visual Representation Models",
       link: "https://av.superbbenchmark.org/",
       authors: [
@@ -105,7 +105,7 @@ const researchData: ResearchDataType = {
       }
     },
     {
-      image: "static/research/dbc.png",
+      image: "/static/research/dbc.png",
       title: "Diffusion Model-Augmented Behavioral Cloning",
       link: "https://nturobotlearninglab.github.io/dbc/",
       authors: [
@@ -138,7 +138,7 @@ const researchData: ResearchDataType = {
       }
     },
     {
-      image: "static/research/cuda-dst.png",
+      image: "/static/research/cuda-dst.png",
       title: "Controllable User Dialogue Act Augmentation for Dialogue State Tracking",
       link: "https:/Xi.org/abs/2106.01598",
       authors: [

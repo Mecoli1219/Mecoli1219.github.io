@@ -18,7 +18,7 @@ function Publications() {
         <div className="h-12"></div>
         {researchData.researchList.map((research: ResearchType, index: number) => {
           return (
-            <Publication research={research} index={index} />
+            <Publication research={research} index={index} key={index} />
           )
         })}
       </div>
