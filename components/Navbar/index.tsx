@@ -47,7 +47,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, visible]);
   return (
-    <>
+    <div className="max-w-screen">
       {
         openMenu && (
           // full page menu
@@ -55,7 +55,7 @@ export default function Navbar() {
         )
       }
       <div className={`relative top-0 `}>
-        <div className={`transition-top duration-500 max-w-full mx-auto px-4 py-10 h-32 fixed left-0 right-0 z-nav 
+        <div className={`transition-top duration-500 max-w-screen px-4 py-10 h-32 fixed left-0 right-0 z-nav 
           ${visible ? "top-0 " : "-top-32 "} 
           ${router.pathname === "/" ? "" : "bg-[#F1F1F1] mt-0 dark:bg-gray-900"}`}>
           <div className="flex md:flex-row justify-between items-center max-w-6xl mx-auto">
@@ -212,8 +212,8 @@ export default function Navbar() {
 
 
       </div>
-      <div className={`max-w-full mx-auto relative ${openMenu ? "top-32" : " top-0"} left-0 right-0 h-32`}></div>
+      <div className={`max-w-screen relative ${openMenu ? "top-32" : " top-0"} left-0 right-0 h-32`}></div>
 
-    </>
+    </div>
   );
 }

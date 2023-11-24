@@ -102,6 +102,7 @@ class CreateParticles {
   currentPosition?: THREE.Vector3;
   particles!: THREE.Points<THREE.BufferGeometry, THREE.ShaderMaterial>;
   geometryCopy!: THREE.BufferGeometry;
+  touchable: Boolean;
 
 
   constructor(scene: THREE.Scene, font: Font, particleImg: THREE.Texture, camera: THREE.PerspectiveCamera, renderer: THREE.WebGLRenderer, text: string) {
@@ -109,13 +110,15 @@ class CreateParticles {
     this.font = font;
     this.text = text;
     this.colorChange = new THREE.Color();
+    const size = Math.min(20, window.screen.width / 15 / 8);
+    const area = size ** 2 * 1.5
     this.data = {
       text: this.text,
       amount: 1500,
       particleSize: 1,
       particleColor: 0xffffff,
       textSize: Math.min(20, window.screen.width / 15 / 8),
-      area: 250,
+      area: area,
       ease: 0.05,
     };
     this.particleImg = particleImg;
@@ -128,7 +131,7 @@ class CreateParticles {
 
 
     this.buttom = false;
-
+    this.touchable = false;
 
     this.bindEvents();
   }
@@ -154,6 +157,7 @@ class CreateParticles {
   }
 
   onMouseDown(event: MouseEvent) {
+    // console.log("down")
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
@@ -166,16 +170,21 @@ class CreateParticles {
     this.particles.geometry.attributes.position;
     this.buttom = true;
     this.data.ease = 0.01;
+    this.touchable = false;
   }
 
   onMouseUp() {
+    // console.log("up")
     this.buttom = false;
     this.data.ease = 0.05;
+    this.touchable = false;
   }
 
   onMouseMove(event: MouseEvent) {
+    // console.log("move")
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    this.touchable = false;
   }
 
   onTouchStart(event: TouchEvent) {
@@ -191,18 +200,19 @@ class CreateParticles {
     this.particles.geometry.attributes.position;
     this.buttom = true;
     this.data.ease = 0.01;
+    this.touchable = true;
   }
 
   onTouchEnd() {
-    console.log("touch end");
     this.buttom = false;
     this.data.ease = 0.05;
+    this.touchable = true;
   }
 
   onTouchMove(event: TouchEvent) {
-    console.log("touch move");
     this.mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
+    this.touchable = true;
   }
 
   render() {
@@ -261,7 +271,7 @@ class CreateParticles {
             coulors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b);
             coulors.needsUpdate = true;
           }
-        } else {
+        } else if (!this.touchable) {
           if (mouseDistance < this.data.area) {
             if (i % 5 === 0) {
               const t = Math.atan2(dy, dx);
@@ -316,6 +326,7 @@ class CreateParticles {
 
     const xMid = -0.5 * (geometry.boundingBox!.max.x - geometry.boundingBox!.min.x);
     const yMid = (geometry.boundingBox!.max.y - geometry.boundingBox!.min.y) / 2.85;
+    console.log(geometry.boundingBox!)
 
     geometry.center();
 
@@ -336,7 +347,6 @@ class CreateParticles {
 
     let colors: number[] = [];
     let sizes: number[] = [];
-
     for (let x = 0; x < shapes.length; x++) {
       let shape = shapes[x];
 

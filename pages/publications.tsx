@@ -4,8 +4,8 @@ import researchData, { ResearchType } from "../constants/research";
 function Publications() {
   return (
     <>
-      <div className="max-w-7xl mx-auto flex flex-col px-5 md:px-20" >
-        <h1 className="text-5xl md:text-5xl font-bold pt-10 pb-5 text-center">
+      <div className="max-w-screen mx-auto flex flex-col px-5 md:px-20" >
+        <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold pt-10 pb-5 text-center">
           Publications.
         </h1>
         <div className="text-container max-w-md mx-auto pt-2 border-t-2 border-gray-400">

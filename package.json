@@ -3,12 +3,12 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev",
+        "dev": "NEXT_SHARP_PATH=./node_modules/sharp next dev",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
         "export": "next export",
-        "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && echo \"www.mecoli.net\" >> out/CNAME && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+        "deploy": "rm -rf node_modules/.cache && NEXT_SHARP_PATH=./node_modules/sharp next build && next export && touch out/.nojekyll && echo \"www.mecoli.net\" >> out/CNAME && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
     },
     "dependencies": {
         "@types/node": "18.11.10",
@@ -21,6 +21,7 @@
         "next-themes": "^0.2.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
+        "sharp": "^0.32.6",
         "three": "^0.147.0",
         "typescript": "4.9.3"
     },

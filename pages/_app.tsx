@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }: CustomAppProps) {
         </>
           : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50  min-h-screen">
             <Navbar />
-            <div className='flex items-center pb-12 m-auto w-screen'>
+            <div className='flex items-center pb-12 m-auto w-scr'>
               <Component {...pageProps} />
             </div>
           </div>

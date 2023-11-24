@@ -7,8 +7,8 @@ function About() {
   return (
     <>
       {/* <div className="justify-center align-middle text-center flex flex-row items-center"> */}
-      <div className="mx-auto flex flex-col max-w-screen xl:max-w-4xl lg:max-w-3xl md:max-w-2xl px-5">
-        <h1 className="text-5xl md:text-5xl font-bold pt-10 pb-5 text-center">
+      <div className="mx-auto w-screen xl:w-4xl lg:w-3xl md:w-2xl px-5 flex flex-col ">
+        <h1 className="text-4xl sm:text-5xl font-bold pt-10 pb-5 text-center w-full">
           About Me.
         </h1>
         <div className="text-container max-w-md mx-auto pt-2 border-t-2 border-gray-400">
@@ -18,7 +18,7 @@ function About() {
             Software Engineer & Researcher in Deep Learning.
           </p>
         </div>
-        <div className="flex flex-col space-y-12 w-screen xl:w-4xl lg:w-3xl md:w-2xl mt-10">
+        <div className="flex flex-col space-y-12 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
           <Description />
           <Education />
           <Awards />

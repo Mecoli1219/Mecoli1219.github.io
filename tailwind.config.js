@@ -67,6 +67,8 @@ module.exports = {
         '3/4': '75%',
         '95': '95%',
         '95screen': '95vw',
+        'sm': '640px',
+        '2screen': '200vw'
       },
       maxWidth: {
         '1/4': '25%',
