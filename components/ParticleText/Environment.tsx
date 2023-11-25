@@ -326,7 +326,7 @@ class CreateParticles {
 
     const xMid = -0.5 * (geometry.boundingBox!.max.x - geometry.boundingBox!.min.x);
     const yMid = (geometry.boundingBox!.max.y - geometry.boundingBox!.min.y) / 2.85;
-    console.log(geometry.boundingBox!)
+    // console.log(geometry.boundingBox!)
 
     geometry.center();
 
