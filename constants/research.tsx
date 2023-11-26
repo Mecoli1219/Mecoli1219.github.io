@@ -140,7 +140,7 @@ const researchData: ResearchDataType = {
     {
       image: "/static/research/cuda-dst.png",
       title: "Controllable User Dialogue Act Augmentation for Dialogue State Tracking",
-      link: "https:/Xi.org/abs/2106.01598",
+      link: "https://arxiv.org/abs/2207.12757",
       authors: [
         {
           name: "Chun-Mao Lai*",

@@ -11,7 +11,9 @@ export default function Awards() {
                     <tbody className="">
                         <tr className="flex flex-row border-y px-2 dark:bg-gray-800 bg-gray-100 p-2">
                             <th className="w-16 flex items-center">
-                                2023
+                                <p>
+                                    2023
+                                </p>
                             </th>
                             <th className="basis-5/12 dark:text-blue-300 text-blue-500 flex items-center">
                                 NTUEE Undergraduate Innovation Award <br /> (臺大電機系精專獎)
