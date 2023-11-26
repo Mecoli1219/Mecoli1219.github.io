@@ -171,13 +171,15 @@ class CreateParticles {
     this.buttom = true;
     this.data.ease = 0.01;
     this.touchable = false;
+    event.preventDefault();
   }
 
-  onMouseUp() {
+  onMouseUp(event: MouseEvent) {
     // console.log("up")
     this.buttom = false;
     this.data.ease = 0.05;
     this.touchable = false;
+    // event.preventDefault();
   }
 
   onMouseMove(event: MouseEvent) {
@@ -185,6 +187,7 @@ class CreateParticles {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
     this.touchable = false;
+    // event.preventDefault();
   }
 
   onTouchStart(event: TouchEvent) {
@@ -201,18 +204,21 @@ class CreateParticles {
     this.buttom = true;
     this.data.ease = 0.01;
     this.touchable = true;
+    event.preventDefault();
   }
 
-  onTouchEnd() {
+  onTouchEnd(event: TouchEvent) {
     this.buttom = false;
     this.data.ease = 0.05;
     this.touchable = true;
+    // event.preventDefault();
   }
 
   onTouchMove(event: TouchEvent) {
     this.mouse.x = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
     this.touchable = true;
+    // event.preventDefault();
   }
 
   render() {

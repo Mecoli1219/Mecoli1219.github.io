@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head';
 import { ThemeProvider } from "next-themes";
 import Navbar from '../components/Navbar';
+import { useEffect } from 'react';
+import { Layout } from '../components/Layout';
 
 type CustomAppProps = AppProps & {
   Component: {
@@ -31,19 +33,24 @@ export default function App({ Component, pageProps }: CustomAppProps) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        {/* <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" /> */}
       </Head>
       {
         Component.transparentNavbar ? <>
           <Navbar />
-          <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50">
-            <Component {...pageProps} />
+          <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 ">
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
           </div>
         </>
-          : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50  min-h-screen">
+          : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50  min-h-screen ">
             <Navbar />
-            <div className='flex items-center pb-12 m-auto w-scr'>
-              <Component {...pageProps} />
-            </div>
+            <Layout>
+              <div className='flex items-center pb-12 m-auto'>
+                <Component {...pageProps} />
+              </div>
+            </Layout>
           </div>
       }
     </ThemeProvider>

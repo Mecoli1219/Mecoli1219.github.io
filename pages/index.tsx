@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
 import ParticleText from "../components/ParticleText";
-import Navbar from "../components/Navbar";
 
 function Home() {
   const particleText = "Chun-Mao Lai\n      Mecoli";
 
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+  }, []);
 
   return (
 
