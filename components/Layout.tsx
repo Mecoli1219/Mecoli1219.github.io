@@ -20,8 +20,10 @@ export const Layout = ({ children }: Props): JSX.Element => {
     useEffect(() => {
         if (router.pathname === '/') {
             document.body.style.overflow = 'hidden';
+            document.body.style.userSelect = 'none'
         } else {
             document.body.style.overflow = 'auto';
+            document.body.style.userSelect = 'text';
         }
     }, [router]);
 

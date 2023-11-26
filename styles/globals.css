@@ -11,6 +11,10 @@ body {
     overflow: hidden;
 }
 
+* {
+    user-select: inherit;
+}
+
 strong {
     font-weight: 600;
 }

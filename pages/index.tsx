@@ -8,6 +8,7 @@ function Home() {
 
   useEffect(() => {
     document.body.style.overflow = 'hidden'
+    document.body.style.userSelect = 'none'
   }, []);
 
   return (
