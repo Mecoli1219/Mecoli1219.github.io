@@ -11,6 +11,12 @@ body {
     overflow: hidden;
 }
 
+@layer base {
+    body {
+        @apply bg-[#F1F1F1] mt-0 dark:bg-gray-900
+    }
+}
+
 * {
     user-select: inherit;
     -webkit-touch-callout: none;
