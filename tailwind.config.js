@@ -20,7 +20,12 @@ module.exports = {
         "0.5font": "0.5em",
         "0.8font": "0.8em",
         "90screen": "90vh",
-        'font': '1em'
+        'font': '1em',
+        "60vw": "60vw",
+        "asp-xl": "27rem",
+        "asp-2xl": "32rem",
+        "asp-3xl": "36rem",
+        "asp-4xl": "42rem",
       },
       boxShadow: {
         'nav': '0px 0px 10px 0px rgba(0, 0, 0, 0.5)',
@@ -52,7 +57,8 @@ module.exports = {
       },
       zIndex: {
         "60": "60",
-        "nav": "1000",
+        "70": "70",
+        "nav": "55",
         "nav-1": "1001",
         "nav-2": "1002",
         "nav-3": "1003",

@@ -37,9 +37,9 @@ export const NavbarMenu = ({ setOpenMenu, items, theme, setTheme, mounted }: Nav
             }
             {/* separate line */}
             <div className="border-gray-400 dark:border-gray-400 border box-border mt-5 mb-12 md:my-2"></div>
-            <div className="space-x-4 flex flex-row items-center justify-center pt-5">
+            <div className="flex flex-row items-center justify-center pt-5">
 
-                <a href={userData.socialLinks.github} >
+                <a href={userData.socialLinks.github} className="hover:bg-[#F1F1F1] hover:dark:bg-gray-700 rounded-lg hover:shadow-lg p-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -52,7 +52,7 @@ export const NavbarMenu = ({ setOpenMenu, items, theme, setTheme, mounted }: Nav
                     </svg>
                 </a>
 
-                <a href={userData.socialLinks.facebook} >
+                <a href={userData.socialLinks.facebook} className="hover:bg-[#F1F1F1] hover:dark:bg-gray-700 rounded-lg hover:shadow-lg p-2" >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -65,7 +65,7 @@ export const NavbarMenu = ({ setOpenMenu, items, theme, setTheme, mounted }: Nav
                     </svg>
                 </a>
 
-                <a href={userData.socialLinks.instagram} >
+                <a href={userData.socialLinks.instagram} className="hover:bg-[#F1F1F1] hover:dark:bg-gray-700 rounded-lg hover:shadow-lg p-2" >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -78,7 +78,7 @@ export const NavbarMenu = ({ setOpenMenu, items, theme, setTheme, mounted }: Nav
                     </svg>
                 </a>
 
-                <a href={userData.socialLinks.linkin}>
+                <a href={userData.socialLinks.linkin} className="hover:bg-[#F1F1F1] hover:dark:bg-gray-700 rounded-lg hover:shadow-lg p-2">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
@@ -92,7 +92,7 @@ export const NavbarMenu = ({ setOpenMenu, items, theme, setTheme, mounted }: Nav
                 <button
                     aria-label="Toggle Dark Mode"
                     type="button"
-                    className="w-10 h-10 p-3 rounded focus:outline-none"
+                    className="focus:outline-none hover:bg-[#F1F1F1] hover:dark:bg-gray-700 rounded-lg hover:shadow-lg p-2 ml-4"
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
                     {mounted && (

@@ -17,6 +17,20 @@ body {
     }
 }
 
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+        scroll-snap-type: x mandatory;
+    }
+}
+
 * {
     user-select: inherit;
     -webkit-touch-callout: none;

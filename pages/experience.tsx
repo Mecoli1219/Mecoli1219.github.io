@@ -1,3 +1,4 @@
+import Extra from "../components/Experience/Extra";
 import Research from "../components/Experience/Research";
 import Work from "../components/Experience/Work";
 
@@ -18,6 +19,7 @@ function Experience() {
         <div className="flex flex-col space-y-12 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
           <Work />
           <Research />
+          <Extra />
         </div>
       </div>
     </>

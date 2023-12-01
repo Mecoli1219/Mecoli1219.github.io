@@ -110,14 +110,14 @@ class CreateParticles {
     this.font = font;
     this.text = text;
     this.colorChange = new THREE.Color();
-    const size = Math.min(20, window.screen.width / 15 / 8);
-    const area = size ** 2 * 1.5
+    const size = Math.min(20, window.innerWidth / 10 / 8);
+    const area = size ** 2 / 2
     this.data = {
       text: this.text,
       amount: 1500,
       particleSize: 1,
       particleColor: 0xffffff,
-      textSize: Math.min(20, window.screen.width / 15 / 8),
+      textSize: Math.min(20, window.innerWidth / 10 / 8),
       area: area,
       ease: 0.05,
     };
@@ -131,7 +131,7 @@ class CreateParticles {
 
 
     this.buttom = false;
-    this.touchable = false;
+    this.touchable = true;
 
     this.bindEvents();
   }
@@ -331,7 +331,7 @@ class CreateParticles {
     geometry.computeBoundingBox();
 
     const xMid = -0.5 * (geometry.boundingBox!.max.x - geometry.boundingBox!.min.x);
-    const yMid = (geometry.boundingBox!.max.y - geometry.boundingBox!.min.y) / 2.85;
+    const yMid = (geometry.boundingBox!.max.y - geometry.boundingBox!.min.y) / 5;
     // console.log(geometry.boundingBox!)
 
     geometry.center();

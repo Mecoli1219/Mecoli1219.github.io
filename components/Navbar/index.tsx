@@ -60,7 +60,7 @@ export default function Navbar() {
           ${router.pathname === "/" ? "" : "bg-[#F1F1F1] mt-0 dark:bg-gray-900"}`}>
           <div className="flex md:flex-row justify-between items-center max-w-6xl mx-auto">
             <div className="flex flex-col ">
-              <Link href="/">
+              <Link href="/" className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg px-4 py-3">
                 <div className="font-semibold text-xl text-gray-700 dark:text-white inline">
                   {userData.name}
                 </div>
@@ -89,9 +89,9 @@ export default function Navbar() {
               }
             </div>
 
-            <div className="space-x-4 items-center hidden lg:flex flex-row ">
+            <div className=" items-center hidden lg:flex flex-row ">
 
-              <a href={userData.socialLinks.github} >
+              <a href={userData.socialLinks.github} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -104,7 +104,7 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.facebook} >
+              <a href={userData.socialLinks.facebook} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -117,7 +117,7 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.instagram} >
+              <a href={userData.socialLinks.instagram} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -130,7 +130,7 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.linkin}>
+              <a href={userData.socialLinks.linkin} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -144,7 +144,7 @@ export default function Navbar() {
               <button
                 aria-label="Toggle Dark Mode"
                 type="button"
-                className="w-10 h-10 p-3 rounded focus:outline-none"
+                className="focus:outline-none hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2 ml-4"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 {mounted && (
@@ -180,7 +180,7 @@ export default function Navbar() {
               <button
                 aria-label="Menu"
                 title="Menu"
-                className="dark:text-white block px-4 py-3 hover:bg-white hover:shadow-lg right-0"
+                className="dark:text-white block px-4 py-3 hover:bg-white hover:shadow-lg right-0 rounded-lg hover:dark:bg-gray-800"
                 onClick={() => setOpenMenu(!openMenu)}
               >
                 <svg
