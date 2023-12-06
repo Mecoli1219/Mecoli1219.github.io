@@ -22,9 +22,13 @@ export default function ImgList({ imgList }: { imgList: string[] }) {
     }
 
 
-    return <div className="w-full relative h-60vw sm:h-asp-xl md:h-asp-2xl lg:h-asp-3xl xl:h-asp-4xl group pb-4">
-        <div style={{ backgroundImage: `url(${imgList[currentIndex]})` }} className="w-full h-full round-2xl bg-center bg-cover duration-500">
+    return <div
+        className="relative h-60vw sm:h-asp-xl md:h-asp-2xl lg:h-asp-3xl xl:h-asp-4xl group pb-4 xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen z-70 rounded-lg overflow-hidden overscroll-contain"
+        onClick={(e) => e.stopPropagation()}
+    >
+        <div style={{ backgroundImage: `url(${imgList[currentIndex]})` }} className="w-full h-[calc(100%-24px)] round-2xl bg-center bg-cover duration-500">
         </div>
+        {/* <img src={imgList[currentIndex]} className="w-full h-[calc(100%-24px)] round-2xl bg-center bg-cover duration-500" /> */}
         <div className="hidden group-hover:block top-[50%] absolute -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactLeft size={30} onClick={prevImg} />
         </div>

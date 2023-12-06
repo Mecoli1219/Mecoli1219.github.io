@@ -6,17 +6,74 @@ const EESABoard = ({ setOpen }: {
 }) => {
     const imgList = [
         "/static/experience/extra/eesa.png",
-        "/static/portfolio/preselect/preselect.png"
+        "/static/experience/extra/2020_Info.jpg",
+        "/static/experience/extra/2021_Info.jpg",
+        "/static/experience/extra/2022_Info.jpg",
     ]
 
     return <div className="absolute">
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"
             onClick={(e) => { e.stopPropagation(); setOpen(false) }}
         >
-            <div className="bg-[#F1F1F1] dark:bg-gray-700 xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen aspect-[1/2] max-h-90screen flex flex-row justify-center z-70 rounded-lg overflow-hidden"
-                onClick={(e) => e.stopPropagation()}
-            >
-                <ImgList imgList={imgList} />
+            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar">
+                <div className="flex flex-col">
+                    <ImgList imgList={imgList} />
+                    <div className="p-4 my-10 text-center">
+                        <div className="font-extrabold text-blue-600 dark:text-blue-400 text-3xl text-center mb-1">
+                            NTU Electrical Engineering Student Association
+                        </div>
+                        <div className="font-bold text-gray-400 dark:text-gray-300 text-xl text-center mb-5">
+                            Minister of Information Department
+                        </div>
+                        <div className="font-bold text-2xl mb-2 mt-10">
+                            【My Jobs】
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            Conducted open lectures on software tools like Git, Linux, and VSCode for NTUEE students.
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            Offered weekly training courses about web development and software engineering.
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            Developed and maintained web services for the Electrical Engineering Department.
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            Assisted in organizing activities for our department, such as MakeNTU, EE Night, EE Week, etc.
+                        </div>
+
+                        <div className="font-bold text-2xl mb-2 mt-10">
+                            【My Projects】
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            NTUEE Course Pre-selection Website
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            2022 NTUEE Week Game
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            2022 NTUEE Week Ordering Platform
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            2023 MakeNTU Competition Website
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            NTUEE Student Association Website
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 ">
+                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            NTUEE Course Map
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -49,7 +106,7 @@ export default function EESA() {
                         Sep. 2020 - Jul. 2023
                     </div>
                     <div>
-                        Our organization aimed to produce and maintain web services for the Electrical Engineering Department. We also help organize some activities of out department such like MakeNTU, EE Night, EE Week, etc.
+                        Our organization aims to produce and maintain web services for the Electrical Engineering Department. We also help organize activities for our department, such as MakeNTU, EE Night, EE Week, etc.
                     </div>
                 </div>
             </div>
