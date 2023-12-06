@@ -29,19 +29,19 @@ const EESABoard = ({ setOpen }: {
                             【My Jobs】
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             Conducted open lectures on software tools like Git, Linux, and VSCode for NTUEE students.
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             Offered weekly training courses about web development and software engineering.
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             Developed and maintained web services for the Electrical Engineering Department.
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             Assisted in organizing activities for our department, such as MakeNTU, EE Night, EE Week, etc.
                         </div>
 
@@ -49,27 +49,27 @@ const EESABoard = ({ setOpen }: {
                             【My Projects】
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             NTUEE Course Pre-selection Website
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             2022 NTUEE Week Game
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             2022 NTUEE Week Ordering Platform
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             2023 MakeNTU Competition Website
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             NTUEE Student Association Website
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3  bg-gray-200 rounded-full"></p>
+                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
                             NTUEE Course Map
                         </div>
                     </div>
