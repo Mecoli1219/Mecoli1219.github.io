@@ -47,7 +47,7 @@ const WeekGameBoard = ({ setOpen }: {
                             【Introduction】
                         </div>
                         <div className="text-gray-400 dark:text-gray-300 text-left max-sm:text-sm  px-2 sm:px-5 md:px-20">
-                            NTUEE Week is an annual event organized by NTUEE students. As part of enhancing the event's appeal, we created a small game for university students. The game simulates the life of an EE student, presenting challenges such as circuit design, exams, and projects. The objective is to navigate through these obstacles, aiming to survive for as long as possible.
+                            NTUEE Week is an annual event organized by NTUEE students. As part of enhancing the event&apos;s appeal, we created a small game for university students. The game simulates the life of an EE student, presenting challenges such as circuit design, exams, and projects. The objective is to navigate through these obstacles, aiming to survive for as long as possible.
                         </div>
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【Features】
@@ -57,10 +57,10 @@ const WeekGameBoard = ({ setOpen }: {
                                 The game is responsive to different devices.
                             </li>
                             <li>
-                                The game's speed increases as the player progresses.
+                                The game&apos;s speed increases as the player progresses.
                             </li>
                             <li>
-                                Various promotional items in the game can aid or accelerate the player's demise.
+                                Various promotional items in the game can aid or accelerate the player&apos;s demise.
                             </li>
                             <li>
                                 A leaderboard displays the top 50 players.
@@ -71,7 +71,7 @@ const WeekGameBoard = ({ setOpen }: {
                         </div>
                         <div className="grid grid-cols-5 max-md:grid-cols-3 w-full gap-y-2 sm:gap-y-4 gap-x-4 sm:gap-x-10 px-10">
                             {techList.map((tech) => {
-                                return <TechBox tech={tech} />
+                                return <TechBox tech={tech} key={tech} />
                             })}
                         </div>
                         <div className="font-bold text-2xl mb-2 mt-10">
@@ -88,7 +88,7 @@ const WeekGameBoard = ({ setOpen }: {
                                 Designed the game logistics and the leaderboard.
                             </li>
                             <li>
-                                Addressed bugs and improved the game's performance.
+                                Addressed bugs and improved the game&apos;s performance.
                             </li>
                         </ul>
                     </div>

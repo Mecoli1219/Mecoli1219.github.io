@@ -55,7 +55,7 @@ const MakeNTUBoard = ({ setOpen }: {
                         </div>
                         <div className="grid grid-cols-5 max-md:grid-cols-3 w-full gap-y-2 sm:gap-y-4 gap-x-4 sm:gap-x-10 px-10">
                             {techList.map((tech) => {
-                                return <TechBox tech={tech} />
+                                return <TechBox tech={tech} key={tech} />
                             })}
                         </div>
                         <div className="font-bold text-2xl mb-2 mt-10">
