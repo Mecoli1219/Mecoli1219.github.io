@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "./ImgList";
+import ImgList from "../../ImgList";
 
 const MakeNTUBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
@@ -7,13 +7,15 @@ const MakeNTUBoard = ({ setOpen }: {
     const imgList = [
         "/static/experience/extra/Eureka.png",
         "/static/experience/extra/makeNTU.png",
+        "/static/experience/extra/makeNTU_self.jpg",
+        "/static/experience/extra/makeNTU_Group.jpg",
     ]
 
     return <div className="absolute">
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"
             onClick={(e) => { e.stopPropagation(); setOpen(false) }}
         >
-            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
+            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
                 <div className="flex flex-col">
                     <ImgList imgList={imgList} />
                     <div className="p-4 my-10 text-center flex flex-col items-center">
@@ -39,14 +41,15 @@ const MakeNTUBoard = ({ setOpen }: {
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【My Jobs】
                         </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Built the tools rental and machine reservation system for MakeNTU.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Maintain the main website of MakeNTU.
-                        </div>
+
+                        <ul className="list-disc text-gray-400 dark:text-gray-300 text-left max-w-full w-fit list-outside max-sm:text-sm px-2 sm:px-5 md:px-20">
+                            <li>
+                                Built the tools rental and machine reservation system for MakeNTU.
+                            </li>
+                            <li>
+                                Maintain the main website of MakeNTU.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

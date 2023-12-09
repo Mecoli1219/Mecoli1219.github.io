@@ -92,6 +92,23 @@ module.exports = {
         "60screen": '60vh',
         "screen": '100vh',
         "48": "192px",
+      },
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        roman: 'upper-roman',
+        circle: 'circle',
+      },
+      backgroundSize: {
+        'auto': 'auto',
+        'cover': 'cover',
+        'contain': 'contain',
+        'full': '100%',
+      },
+      transitionProperty: {
+        'bg-size': 'background-size',
       }
     },
   },

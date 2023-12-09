@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "./ImgList";
+import ImgList from "../../ImgList";
 
 const LightDanceBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
@@ -16,7 +16,7 @@ const LightDanceBoard = ({ setOpen }: {
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"
             onClick={(e) => { e.stopPropagation(); setOpen(false) }}
         >
-            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
+            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
                 <div className="flex flex-col">
                     <ImgList imgList={imgList} />
                     <div className="p-4 my-10 text-center flex flex-col items-center">
@@ -49,22 +49,23 @@ const LightDanceBoard = ({ setOpen }: {
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【My Jobs】
                         </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Built a backend service for the lightdance editor.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Designed the data structure for the entire light dance system, optimizing data querying and post-processing.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Led the software group to develop and maintain the light dance system.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Maintained the codebase for inheriting the project to the next generation.
-                        </div>
+                        <ul className="list-disc text-gray-400 dark:text-gray-300 text-left max-w-full w-fit list-outside max-sm:text-sm px-2 sm:px-5 md:px-20">
+                            <li>
+                                Built a backend service from scratch.
+                            </li>
+                            <li>
+                                Designed the data structure for the entire light dance system, optimizing data querying and post-processing.
+                            </li>
+                            <li>
+                                Ensured stable and real-time communication between the frontend and the controller server.
+                            </li>
+                            <li>
+                                Led the software group in developing and maintaining the light dance system, primarily focusing on the backend.
+                            </li>
+                            <li>
+                                Maintained the codebase for inheriting the project to the next generation.
+                            </li>
+                        </ul>
                         <div className="font-bold text-2xl mb-5 mt-10">
                             【2023 Performance】
                         </div>

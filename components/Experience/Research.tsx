@@ -79,7 +79,7 @@ export default function Research() {
                                 </div>
                             </td>
                         </tr>
-                        <tr className="flex flex-row border-y p-2 dark:bg-gray-800 bg-gray-100">
+                        <tr className="flex flex-row border-b p-2 dark:bg-gray-800 bg-gray-100">
                             <th className="basis-1/4 flex items-center">
                                 <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank"
                                     rel="noopener noreferrer" className="dark:text-blue-300 text-blue-500 hover:underline">

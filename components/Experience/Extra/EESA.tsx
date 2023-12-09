@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "./ImgList";
+import ImgList from "../../ImgList";
 
 const EESABoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
@@ -11,11 +11,11 @@ const EESABoard = ({ setOpen }: {
         "/static/experience/extra/eesa.png",
     ]
 
-    return <div className="absolute">
+    return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"
             onClick={(e) => { e.stopPropagation(); setOpen(false) }}
         >
-            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar">
+            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
                 <div className="flex flex-col">
                     <ImgList imgList={imgList} />
                     <div className="p-4 my-10 text-center flex flex-col items-center">
@@ -41,50 +41,45 @@ const EESABoard = ({ setOpen }: {
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【My Jobs】
                         </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Conducted open lectures on software tools like Git, Linux, and VSCode for NTUEE students.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Offered weekly training courses about web development and software engineering.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Developed and maintained web services for the Electrical Engineering Department.
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            Assisted in organizing activities for our department, such as MakeNTU, EE Night, EE Week, etc.
-                        </div>
+                        <ul className="list-disc text-gray-400 dark:text-gray-300 text-left max-w-full w-fit list-outside max-sm:text-sm px-2 sm:px-5 md:px-20">
+                            <li>
+                                Conducted open lectures on software tools like Git, Linux, and VSCode for NTUEE students.
+                            </li>
+                            <li>
+                                Offered weekly training courses about web development and software engineering.
+                            </li>
+                            <li>
+                                Developed and maintained web services for the Electrical Engineering Department.
+                            </li>
+                            <li>
+                                Assisted in organizing activities for our department, such as MakeNTU, EE Night, EE Week, etc.
+                            </li>
+                        </ul>
 
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【My Projects】
                         </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            NTUEE Course Pre-selection Website
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            2022 NTUEE Week Game
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            2022 NTUEE Week Ordering Platform
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            2023 MakeNTU Competition Website
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            NTUEE Student Association Website
-                        </div>
-                        <div className="text-gray-400 dark:text-gray-300 ">
-                            <p className="inline-block mr-2 w-3 h-3 bg-gray-400 dark:bg-gray-200 rounded-full"></p>
-                            NTUEE Course Map
-                        </div>
+
+                        <ul className="list-disc text-gray-400 dark:text-gray-300 text-left max-w-full w-fit list-outside max-sm:text-sm px-2 sm:px-5 md:px-20">
+                            <li>
+                                NTUEE Course Pre-selection Website
+                            </li>
+                            <li>
+                                2022 NTUEE Week Game
+                            </li>
+                            <li>
+                                2022 NTUEE Week Ordering Platform
+                            </li>
+                            <li>
+                                2023 MakeNTU Competition Website
+                            </li>
+                            <li>
+                                NTUEE Student Association Website
+                            </li>
+                            <li>
+                                NTUEE Course Map
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
