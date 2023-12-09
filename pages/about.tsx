@@ -18,7 +18,7 @@ function About() {
             Software Engineer & Researcher in Deep Learning.
           </p>
         </div>
-        <div className="flex flex-col space-y-12 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
+        <div className="flex flex-col space-y-16 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
           <Description />
           <Education />
           <Awards />

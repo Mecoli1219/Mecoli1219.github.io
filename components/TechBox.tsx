@@ -57,9 +57,9 @@ export const techs: TechDictType[] = [
     "PostgreSQL",
     "Redis",
     "GoogleAPI",
+    "Robotic Operating System (ROS)",
     "Docker",
     "Git",
-    "Robotic Operating System (ROS)",
 ]
 // export { CPP, CSS, Docker, Express, Git, HTML, JS, Node, Next, Python, Pytorch, React, Mongo, Tailwind, TS, Flask, Redis, Mui }
 

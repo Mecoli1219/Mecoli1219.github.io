@@ -41,6 +41,13 @@ const EESABoard = ({ setOpen }: {
                             NTUEEInfoDep
                         </a>
                         <div className="font-bold text-2xl mb-2 mt-10">
+                            【Introduction】
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 text-left max-sm:text-sm  px-2 sm:px-5 md:px-20">
+                            Our organization aims to produce and maintain web services for the Electrical Engineering Department. We also help organize activities for our department, such as MakeNTU, EE Night, EE Week, etc.
+                        </div>
+
+                        <div className="font-bold text-2xl mb-2 mt-10">
                             【My Jobs】
                         </div>
                         <ul className="list-disc text-gray-400 dark:text-gray-300 text-left max-w-full w-fit list-outside max-sm:text-sm px-2 sm:px-5 md:px-20">
@@ -98,11 +105,11 @@ export default function EESA() {
             className="rounded-lg w-full text-base align-middle text-gray-500 dark:text-gray-300 bg-[#F1F1F1] mt-0 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 hover:cursor-pointer"
             onClick={() => setOpen(true)}
         >
-            <div className="flex flex-col md:flex-row py-5 px-0 md:p-2 justify-center items-center content-center">
-                <div className="max-md:max-w-xs max-md:mx-5 max-md:mb-5 md:basis-2/6 lg:basis-1/4 mx-auto rounded-lg overflow-hidden border flex justify-center items-center content-center bg-white aspect-square">
+            <div className="flex flex-col sm:flex-row py-5 px-0 sm:p-2 justify-center items-center content-center">
+                <div className="max-sm:max-w-xs max-sm:mx-5 max-sm:mb-5 sm:basis-2/6 lg:basis-1/4 mx-auto rounded-lg overflow-hidden border flex justify-center items-center content-center bg-white aspect-square">
                     <img src="/static/experience/extra/eesa.png" className="object-cover" alt="eesa" />
                 </div>
-                <div className="basis-full md:basis-4/6 lg:basis-3/4 pl-5 max-md:pr-5 break-words">
+                <div className="basis-full sm:basis-4/6 lg:basis-3/4 pl-5 max-sm:pr-5 break-words max-sm:text-center">
                     <div className="font-extrabold text-black dark:text-white text-lg">
                         NTU Electrical Engineering Student Association
                     </div>
@@ -115,7 +122,7 @@ export default function EESA() {
                         </b>
                         Sep. 2020 - Jul. 2023
                     </div>
-                    <div>
+                    <div className=" text-sm mt-4 text-left">
                         Our organization aims to produce and maintain web services for the Electrical Engineering Department. We also help organize activities for our department, such as MakeNTU, EE Night, EE Week, etc.
                     </div>
                 </div>

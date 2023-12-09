@@ -5,7 +5,7 @@ export default function Awards() {
 
     return (
         <div className="bg-white dark:bg-gray-600 py-12 px-2 sm:px-12 rounded-lg shadow-md w-full">
-            <h1 className="text-3xl font-bold text-left mb-8">{"<Awards />"}</h1>
+            <h1 className="text-3xl font-bold text-center mb-8">{"<Awards />"}</h1>
             <div className="overflow-x-auto">
                 <table className="text-left sm:rounded-lg text-base align-middle text-gray-500 dark:text-gray-300 border-separate border-spacing-0 bg-transparent overflow-x-scroll min-w-screen">
                     <tbody className="">

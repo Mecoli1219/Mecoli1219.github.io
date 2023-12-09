@@ -5,16 +5,16 @@ export default function Work() {
         <div className="bg-white dark:bg-gray-600 py-12 px-2 sm:px-12 rounded-lg shadow-md w-full">
             <h1 className="text-3xl font-bold text-center mb-8">{"<Industry />"}</h1>
             <div className="overflow-x-auto">
-                <table className="text-left sm:rounded-lg w-full text-base align-middle text-gray-500 dark:text-gray-300 border-separate border-spacing-0 bg-transparent min-w-screen">
+                <table className="text-left sm:rounded-lg w-full text-base max-sm:text-sm max-[400px]:text-xs align-middle text-gray-500 dark:text-gray-300 border-separate border-spacing-0 bg-transparent min-w-screen">
                     <tbody className="">
                         <tr className="flex flex-row border-y p-2 dark:bg-gray-800 bg-gray-100">
-                            <th className="basis-1/3 flex items-center">
+                            <th className="basis-1/3 max-[360px]:basis-1/2 flex items-center">
                                 <a href="https://nturobotlearninglab.github.io/dbc/" target="_blank"
                                     rel="noopener noreferrer" className="dark:text-blue-300 text-blue-500 hover:underline">
                                     Taiwan Semiconductor Manufacturing Company
                                 </a>
                             </th>
-                            <td className="px-5 basis-2/3 flex items-center">
+                            <td className="px-5 basis-2/3 max-[360px]:basis-1/2 flex items-center">
                                 <div>
                                     <div className="text-black dark:text-white">
                                         <b>

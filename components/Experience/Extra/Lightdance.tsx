@@ -47,6 +47,13 @@ const LightDanceBoard = ({ setOpen }: {
                         </a>
 
                         <div className="font-bold text-2xl mb-2 mt-10">
+                            【Introduction】
+                        </div>
+                        <div className="text-gray-400 dark:text-gray-300 text-left max-sm:text-sm  px-2 sm:px-5 md:px-20">
+                            NTUEE Light Dance is a group of NTUEE students passionate about art and technology. The performance incorporates choreography, music, handcraft, and engineering, presenting numerous challenges to overcome.
+                        </div>
+
+                        <div className="font-bold text-2xl mb-2 mt-10">
                             【My Jobs】
                         </div>
                         <ul className="list-disc text-gray-400 dark:text-gray-300 text-left max-w-full w-fit list-outside max-sm:text-sm px-2 sm:px-5 md:px-20">
@@ -94,11 +101,11 @@ export default function LightDance() {
             className="rounded-lg w-full text-base align-middle text-gray-500 dark:text-gray-300 bg-[#F1F1F1] mt-0 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 hover:cursor-pointer"
             onClick={() => setOpen(true)}
         >
-            <div className="flex flex-col md:flex-row py-5 px-0 md:p-2 justify-center items-center content-center">
-                <div className="max-md:max-w-xs max-md:mx-5 max-md:mb-5 md:basis-2/6 lg:basis-1/4 mx-auto rounded-lg overflow-hidden border flex justify-center items-center content-center bg-white aspect-square">
+            <div className="flex flex-col sm:flex-row py-5 px-0 sm:p-2 justify-center items-center content-center">
+                <div className="max-sm:max-w-xs max-sm:mx-5 max-sm:mb-5 sm:basis-2/6 lg:basis-1/4 mx-auto rounded-lg overflow-hidden border flex justify-center items-center content-center bg-white aspect-square">
                     <img src="/static/experience/extra/LightDance.jpeg" className="object-cover" alt="lightdance" />
                 </div>
-                <div className="basis-full md:basis-4/6 lg:basis-3/4 pl-5 max-md:pr-5 break-words">
+                <div className="basis-full sm:basis-4/6 lg:basis-3/4 pl-5 max-sm:pr-5 break-words max-sm:text-center">
                     <div className="font-extrabold text-black dark:text-white text-lg">
                         NTUEE Light Dance
                     </div>
@@ -111,7 +118,7 @@ export default function LightDance() {
                         </b>
                         Sep. 2021 - Jul. 2023
                     </div>
-                    <div>
+                    <div className=" text-sm mt-4 text-left">
                         NTUEE Light Dance is a group of NTUEE students passionate about art and technology. The performance incorporates choreography, music, handcraft, and engineering, presenting numerous challenges to overcome.
                     </div>
                 </div>

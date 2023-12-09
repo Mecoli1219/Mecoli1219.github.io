@@ -1,5 +1,5 @@
 import React from "react";
-import TechBox, { TechDictType, techs } from "../TechBox";
+import TechBox, { techs } from "../TechBox";
 
 export default function Skills() {
     return (

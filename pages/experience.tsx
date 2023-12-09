@@ -17,7 +17,7 @@ function Experience() {
             The only source of knowledge is experience.
           </p>
         </div>
-        <div className="flex flex-col space-y-12 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
+        <div className="flex flex-col space-y-16 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
           <Work />
           <Research />
           <Extra />
