@@ -3,7 +3,7 @@ import ImgList from "../ImgList";
 import TechBox, { TechDictType } from "../TechBox";
 
 const techList: TechDictType[] = [
-    "HTML", "CSS", "Typescript", "nextjs", "Tailwind", "GoogleAPI", "Docker", "Git"
+    "HTML", "CSS", "Typescript", "Next.js", "Tailwind", "GoogleAPI", "Docker", "Git"
 ]
 
 const AVSuperbBoard = ({ setOpen }: {

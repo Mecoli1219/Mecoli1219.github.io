@@ -23,9 +23,43 @@ const postgres = '/static/tech/postgresql.png'
 const google = '/static/tech/google.png'
 const openCV = '/static/tech/opencv.png'
 const ros = '/static/tech/ROS.png'
+const CSharp = '/static/tech/c-sharp.png'
+const tensorflow = '/static/tech/tensorflow.png'
+const huggingface = '/static/tech/hf-logo.png'
+const mysql = '/static/tech/mysql.png'
+const golang = '/static/tech/go-logo.png'
 
-export const techs = [
-    CPP, Python, HTML, CSS, JS, TS, Pytorch, Flask, React, Next, Mui, Tailwind, Three, Node, Express, Mongo, Redis, Docker, Git
+export const techs: TechDictType[] = [
+    "C/C++",
+    "Python",
+    "Javascript",
+    "Typescript",
+    "C#",
+    "Golang",
+    "HTML",
+    "CSS",
+    "PyTorch",
+    "Tensorflow",
+    "HuggingFace",
+    "OpenCV",
+    "Flask",
+    "React",
+    "Next.js",
+    "ThreeJS",
+    "MaterialUI",
+    "Tailwind",
+    "NodeJS",
+    "ExpressJS",
+    "GraphQL",
+    "Prisma",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL",
+    "Redis",
+    "GoogleAPI",
+    "Docker",
+    "Git",
+    "Robotic Operating System (ROS)",
 ]
 // export { CPP, CSS, Docker, Express, Git, HTML, JS, Node, Next, Python, Pytorch, React, Mongo, Tailwind, TS, Flask, Redis, Mui }
 
@@ -39,7 +73,7 @@ export const techDict = {
     "PyTorch": Pytorch,
     "Flask": Flask,
     "React": React,
-    "nextjs": Next,
+    "Next.js": Next,
     "MaterialUI": Mui,
     "Tailwind": Tailwind,
     "NodeJS": Node,
@@ -54,17 +88,22 @@ export const techDict = {
     "PostgreSQL": postgres,
     "GoogleAPI": google,
     "OpenCV": openCV,
-    "Robotic Operating System (ROS)": ros
+    "Robotic Operating System (ROS)": ros,
+    "C#": CSharp,
+    "Tensorflow": tensorflow,
+    "HuggingFace": huggingface,
+    "MySQL": mysql,
+    "Golang": golang,
 }
 
 // export techDict key type
 export type TechDictType = keyof typeof techDict;
 
-export default function TechBox({ tech }: { tech: TechDictType }) {
+export default function TechBox({ tech, bgColor = "bg-gray-200 dark:bg-gray-600" }: { tech: TechDictType, bgColor?: string }) {
     return (
         <div className="flex flex-col items-center">
-            <div className="w-full aspect-square p-3 sm:p-4 bg-gray-200 dark:bg-gray-600 rounded-lg justify-center items-center flex">
-                <img src={techDict[tech]} alt={tech} />
+            <div className={`w-full h-fit p-3 sm:p-4 rounded-lg ${bgColor}`}>
+                <img src={techDict[tech]} alt={tech} className="w-full aspect-square object-contain" />
             </div>
             <p className="text-sm md:text-base font-semibold text-center pb-4 pt-1">{tech}</p>
         </div>

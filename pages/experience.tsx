@@ -1,5 +1,6 @@
 import Extra from "../components/Experience/Extra";
 import Research from "../components/Experience/Research";
+import Skills from "../components/Experience/Skills";
 import Work from "../components/Experience/Work";
 
 function Experience() {
@@ -20,6 +21,7 @@ function Experience() {
           <Work />
           <Research />
           <Extra />
+          <Skills />
         </div>
       </div>
     </>
