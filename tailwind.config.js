@@ -34,6 +34,7 @@ module.exports = {
         'top': 'top',
       },
       maxHeight: {
+        "70screen": '70vh',
         "80screen": '80vh',
         "screen": '100vh',
         "90screen": "90vh",

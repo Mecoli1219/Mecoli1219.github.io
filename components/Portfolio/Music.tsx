@@ -17,7 +17,7 @@ const MusicBoard = ({ setOpen, music }: {
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"
             onClick={(e) => { e.stopPropagation(); setOpen(false) }}
         >
-            <div className="h-90screen max-sm:h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
+            <div className="h-90screen max-sm:h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen " onClick={(e) => { e.stopPropagation(); }}>
                 <div className="flex flex-col">
                     <div className="p-4 my-10 text-center flex flex-col items-center">
                         <div className="font-extrabold text-blue-600 dark:text-blue-400 text-3xl text-center mb-8">

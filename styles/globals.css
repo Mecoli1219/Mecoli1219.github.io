@@ -43,6 +43,14 @@ body {
     /* Internet Explorer/Edge */
 }
 
+.scrolling-touch {
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-auto {
+    -webkit-overflow-scrolling: auto;
+}
+
 strong {
     font-weight: 600;
 }

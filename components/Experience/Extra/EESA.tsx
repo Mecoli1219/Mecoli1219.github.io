@@ -11,11 +11,13 @@ const EESABoard = ({ setOpen }: {
         "/static/experience/extra/eesa.png",
     ]
 
-    return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >
+    return <div className="absolute" >
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"
             onClick={(e) => { e.stopPropagation(); setOpen(false) }}
         >
-            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen no-scrollbar" onClick={(e) => { e.stopPropagation(); }}>
+            <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen"
+                onClick={(e) => { e.stopPropagation(); }}
+            >
                 <div className="flex flex-col">
                     <ImgList imgList={imgList} />
                     <div className="p-4 my-10 text-center flex flex-col items-center">
