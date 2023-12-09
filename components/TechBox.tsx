@@ -20,6 +20,9 @@ const Three = '/static/tech/threejs-logo.png'
 const Graphql = '/static/tech/GraphQL.png'
 const prisma = '/static/tech/prisma.png'
 const postgres = '/static/tech/postgresql.png'
+const google = '/static/tech/google.png'
+const openCV = '/static/tech/opencv.png'
+const ros = '/static/tech/ROS.png'
 
 export const techs = [
     CPP, Python, HTML, CSS, JS, TS, Pytorch, Flask, React, Next, Mui, Tailwind, Three, Node, Express, Mongo, Redis, Docker, Git
@@ -48,7 +51,10 @@ export const techDict = {
     "ThreeJS": Three,
     "GraphQL": Graphql,
     "Prisma": prisma,
-    "PostgreSQL": postgres
+    "PostgreSQL": postgres,
+    "GoogleAPI": google,
+    "OpenCV": openCV,
+    "Robotic Operating System (ROS)": ros
 }
 
 // export techDict key type
@@ -56,8 +62,8 @@ export type TechDictType = keyof typeof techDict;
 
 export default function TechBox({ tech }: { tech: TechDictType }) {
     return (
-        <div className="flex flex-col items-center justify-center">
-            <div className="w-full aspect-square p-3 sm:p-4 bg-gray-200 dark:bg-gray-600 rounded-lg">
+        <div className="flex flex-col items-center">
+            <div className="w-full aspect-square p-3 sm:p-4 bg-gray-200 dark:bg-gray-600 rounded-lg justify-center items-center flex">
                 <img src={techDict[tech]} alt={tech} />
             </div>
             <p className="text-sm md:text-base font-semibold text-center pb-4 pt-1">{tech}</p>
