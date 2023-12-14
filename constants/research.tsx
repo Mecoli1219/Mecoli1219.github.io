@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
-import AVSuperb_img from "@/static/research/av-superb.png"
-import DBC_img from "@/static/research/dbc.png"
-import CUDA_img from "@/static/research/cuda-dst.png"
+import AVSuperb_img from "@/static/research/av-superb.webp"
+import DBC_img from "@/static/research/dbc.webp"
+import CUDA_img from "@/static/research/cuda-dst.webp"
 
 export type ResearchType = {
   image: StaticImageData,

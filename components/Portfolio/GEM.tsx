@@ -92,7 +92,7 @@ export default function GEM() {
         >
             <div className="flex flex-col p-5 md:p-2 justify-center items-center content-center">
                 <div className="mx-auto rounded-lg overflow-hidden flex justify-center items-center content-center w-full aspect-[3/2] bg-center bg-contain bg-no-repeat bg-white dark:bg-black
-                bg-[url('/static/portfolio/GEM/GEM.png')] 
+                bg-[url('/static/portfolio/GEM/GEM.webp')] 
                 hover:bg-[url('/static/portfolio/GEM/GEM.gif')] " />
                 <div className="break-words my-5">
                     <div className="font-extrabold text-black dark:text-white text-lg text-center">

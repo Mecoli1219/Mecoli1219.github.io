@@ -9,8 +9,8 @@ const LightDanceBoard = ({ setOpen }: {
     const imgList = [
         "/static/experience/extra/2022_LD.jpeg",
         "/static/experience/extra/2023_LD.jpeg",
-        "/static/experience/extra/LightDance_all.jpg",
-        "/static/experience/extra/All.jpg",
+        "/static/experience/extra/LightDance_all.webp",
+        "/static/experience/extra/All.webp",
         "/static/experience/extra/LightDance.jpeg",
     ]
 

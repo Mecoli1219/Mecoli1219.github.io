@@ -7,9 +7,9 @@ const EESABoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     const imgList = [
-        "/static/experience/extra/2020_Info.jpg",
-        "/static/experience/extra/2021_Info.jpg",
-        "/static/experience/extra/2022_Info.jpg",
+        "/static/experience/extra/2020_Info.webp",
+        "/static/experience/extra/2021_Info.webp",
+        "/static/experience/extra/2022_Info.webp",
         "/static/experience/extra/eesa.png",
     ]
 

@@ -10,14 +10,14 @@ const MakeNTUBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     const imgList = [
-        ["/static/portfolio/MakeNTU/Eureka.png", "bg-cover"],
-        ["/static/portfolio/MakeNTU/Main-1.png", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Machine_1.png", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Machine_2.png", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Tool_1.png", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Tool_2.png", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Tool_3.png", "bg-contain"],
-        ["/static/portfolio/MakeNTU/makeNTU_Group.jpg", "bg-cover"],
+        ["/static/portfolio/MakeNTU/Eureka.webp", "bg-cover"],
+        ["/static/portfolio/MakeNTU/Main-1.webp", "bg-contain"],
+        ["/static/portfolio/MakeNTU/Machine_1.webp", "bg-contain"],
+        ["/static/portfolio/MakeNTU/Machine_2.webp", "bg-contain"],
+        ["/static/portfolio/MakeNTU/Tool_1.webp", "bg-contain"],
+        ["/static/portfolio/MakeNTU/Tool_2.webp", "bg-contain"],
+        ["/static/portfolio/MakeNTU/Tool_3.webp", "bg-contain"],
+        ["/static/portfolio/MakeNTU/makeNTU_Group.webp", "bg-cover"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >
@@ -90,7 +90,7 @@ export default function MakeNTU() {
         >
             <div className="flex flex-col p-5 md:p-2 justify-center items-center content-center">
                 <div className="mx-auto rounded-lg overflow-hidden flex justify-center items-center content-center bg-white w-full aspect-[3/2] bg-center bg-cover
-                bg-[url('/static/portfolio/MakeNTU/Eureka.png')] " />
+                bg-[url('/static/portfolio/MakeNTU/Eureka.webp')] " />
                 <div className="break-words my-5">
                     <div className="font-extrabold text-black dark:text-white text-lg text-center">
                         MakeNTU Website & Competition Services

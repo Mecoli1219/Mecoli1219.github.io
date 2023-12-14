@@ -29,7 +29,7 @@ export const musicData: MusicDataType[] = [
         "musescoreURL": "https://musescore.com/user/11455091/scores/5904894/s/3eN2z1",
         "shareURL": "https://musescore.com/user/11455091/scores/5904894?share=copy_link",
         "title": "Yesterday イエスタデイ - Official髭男dism",
-        "sampleImg": "/static/portfolio/music/yesterday.png",
+        "sampleImg": "/static/portfolio/music/yesterday.webp",
         "views": "7k",
         "likes": "22",
         "stars": 4.9,
@@ -40,7 +40,7 @@ export const musicData: MusicDataType[] = [
         "musescoreURL": "https://musescore.com/user/11455091/scores/5826228/s/JTYsva",
         "shareURL": "https://musescore.com/user/11455091/scores/5826228?share=copy_link",
         "title": "Phoenix - Cailin Russo and Chrissy Costanza",
-        "sampleImg": "/static/portfolio/music/phoenix.png",
+        "sampleImg": "/static/portfolio/music/phoenix.webp",
     },
     {
         "state": "normal",
@@ -48,7 +48,7 @@ export const musicData: MusicDataType[] = [
         "shareURL": "https://musescore.com/user/11455091/scores/6307844?share=copy_link",
         "musescoreURL": "https://musescore.com/user/11455091/scores/6307844/s/nIJ4rS",
         "title": "Spring Song 春はゆく - Aimer",
-        "sampleImg": "/static/portfolio/music/spring.png",
+        "sampleImg": "/static/portfolio/music/spring.webp",
     },
     {
         "state": "normal",
@@ -56,6 +56,6 @@ export const musicData: MusicDataType[] = [
         "shareURL": "https://musescore.com/user/11455091/scores/6253349?share=copy_link",
         "musescoreURL": "https://musescore.com/user/11455091/scores/6253349/s/gJ9Z9O",
         "title": "Yuki No Hate Ni Kimi No Na Wo 雪の果てに君の名を - Nonoc",
-        "sampleImg": "/static/portfolio/music/re0.png",
+        "sampleImg": "/static/portfolio/music/re0.webp",
     }
 ]

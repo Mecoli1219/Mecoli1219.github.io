@@ -10,10 +10,10 @@ const WeekGameBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     const imgList = [
-        ["/static/portfolio/weekgame/EEweek.jpg", "bg-cover"],
-        ["/static/portfolio/weekgame/progress.jpg", "bg-contain"],
-        ["/static/portfolio/weekgame/result.png", "bg-contain"],
-        ["/static/portfolio/weekgame/leaderboard.png", "bg-contain"],
+        ["/static/portfolio/weekgame/EEweek.webp", "bg-cover"],
+        ["/static/portfolio/weekgame/progress.webp", "bg-contain"],
+        ["/static/portfolio/weekgame/result.webp", "bg-contain"],
+        ["/static/portfolio/weekgame/leaderboard.webp", "bg-contain"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >
@@ -109,7 +109,7 @@ export default function WeekGame() {
         >
             <div className="flex flex-col p-5 md:p-2 justify-center items-center content-center">
                 <div className="mx-auto rounded-lg overflow-hidden flex justify-center items-center content-center bg-white w-full aspect-[3/2] bg-center bg-cover
-                bg-[url('/static/portfolio/weekgame/EEweek.jpg')] " />
+                bg-[url('/static/portfolio/weekgame/EEweek.webp')] " />
                 <div className="break-words my-5">
                     <div className="font-extrabold text-black dark:text-white text-lg text-center">
                         2022 NTUEE Week Small Game

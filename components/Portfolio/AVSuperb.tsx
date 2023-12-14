@@ -10,10 +10,10 @@ const AVSuperbBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     const imgList = [
-        ["/static/portfolio/AVSuperb/avsuperb-1.png", "bg-contain"],
-        ["/static/portfolio/AVSuperb/avsuperb-2.png", "bg-contain"],
-        ["/static/portfolio/AVSuperb/avsuperb-3.png", "bg-contain"],
-        ["/static/portfolio/AVSuperb/avsuperb-4.png", "bg-contain"],
+        ["/static/portfolio/AVSuperb/avsuperb-1.webp", "bg-contain"],
+        ["/static/portfolio/AVSuperb/avsuperb-2.webp", "bg-contain"],
+        ["/static/portfolio/AVSuperb/avsuperb-3.webp", "bg-contain"],
+        ["/static/portfolio/AVSuperb/avsuperb-4.webp", "bg-contain"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >

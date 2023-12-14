@@ -7,10 +7,10 @@ const MakeNTUBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     const imgList = [
-        "/static/experience/extra/Eureka.png",
+        "/static/experience/extra/Eureka.webp",
+        "/static/experience/extra/makeNTU_self.webp",
+        "/static/experience/extra/makeNTU_Group.webp",
         "/static/experience/extra/makeNTU.png",
-        "/static/experience/extra/makeNTU_self.jpg",
-        "/static/experience/extra/makeNTU_Group.jpg",
     ]
 
     return <div className="absolute">
