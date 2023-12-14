@@ -1,5 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import TechBox, { TechDictType } from "../TechBox";
+import Image from "next/image";
+import Preselect_gif from '@/static/portfolio/preselect/preselect.gif'
 
 const techList: TechDictType[] = [
     "HTML", "CSS", "Javascript", "Python", "MaterialUI", "NodeJS", "ExpressJS", "Flask", "MongoDB", "Redis", "Docker", "Git"
@@ -39,7 +41,13 @@ const PreselectBoard = ({ setOpen }: {
                         </a>
                         {/* image block */}
                         <div className="mx-auto rounded-lg overflow-hidden flex justify-center items-center content-center bg-white w-full h-fit">
-                            <img className="w-full h-fit object-cover" src="/static/portfolio/preselect/preselect.gif" />
+                            {/* <img className="w-full h-fit object-cover" src="/static/portfolio/preselect/preselect.gif" /> */}
+                            <Image
+                                src={Preselect_gif}
+                                alt="preselect_gif"
+                                className="w-full h-fit object-cover"
+                                priority={true}
+                            />
                         </div>
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【Introduction】

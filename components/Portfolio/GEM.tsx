@@ -1,5 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import TechBox, { TechDictType } from "../TechBox";
+import Image from "next/image";
+import gem_gif from '@/static/portfolio/GEM/GEM.gif'
 
 const techList: TechDictType[] = [
     "Python", "Robotic Operating System (ROS)", "OpenCV"
@@ -23,7 +25,13 @@ const GEMBoard = ({ setOpen }: {
                         </div>
                         {/* image block */}
                         <div className="mx-auto rounded-lg overflow-hidden flex justify-center items-center content-center bg-white w-full h-fit">
-                            <img className="w-full h-fit object-cover" src="/static/portfolio/GEM/GEM.gif" />
+                            {/* <img className="w-full h-fit object-cover" src="/static/portfolio/GEM/GEM.gif" /> */}
+                            <Image
+                                src={gem_gif}
+                                alt="gem_gif"
+                                className="w-full h-fit object-cover"
+                                priority={true}
+                            />
                         </div>
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【Introduction】

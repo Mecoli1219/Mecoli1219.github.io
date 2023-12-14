@@ -1,5 +1,10 @@
+import { StaticImageData } from "next/image";
+import AVSuperb_img from "@/static/research/av-superb.png"
+import DBC_img from "@/static/research/dbc.png"
+import CUDA_img from "@/static/research/cuda-dst.png"
+
 export type ResearchType = {
-  image: string,
+  image: StaticImageData,
   title: string,
   authors: {
     name: string,
@@ -29,7 +34,7 @@ const researchData: ResearchDataType = {
   ],
   researchList: [
     {
-      image: "/static/research/av-superb.png",
+      image: AVSuperb_img,
       title: "AV-SUPERB: A Multi-Task Evaluation Benchmark for Audio-Visual Representation Models",
       link: "https://av.superbbenchmark.org/",
       authors: [
@@ -105,7 +110,7 @@ const researchData: ResearchDataType = {
       }
     },
     {
-      image: "/static/research/dbc.png",
+      image: DBC_img,
       title: "Diffusion Model-Augmented Behavioral Cloning",
       link: "https://nturobotlearninglab.github.io/dbc/",
       authors: [
@@ -138,7 +143,7 @@ const researchData: ResearchDataType = {
       }
     },
     {
-      image: "/static/research/cuda-dst.png",
+      image: CUDA_img,
       title: "Controllable User Dialogue Act Augmentation for Dialogue State Tracking",
       link: "https://arxiv.org/abs/2207.12757",
       authors: [

@@ -1,5 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import ImgList from "../../ImgList";
+import Image from "next/image";
+import icon from '@/static/experience/extra/LightDance.jpeg'
 
 const LightDanceBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
@@ -103,7 +105,13 @@ export default function LightDance() {
         >
             <div className="flex flex-col sm:flex-row py-5 px-0 sm:p-2 justify-center items-center content-center">
                 <div className="max-sm:max-w-xs max-sm:mx-5 max-sm:mb-5 sm:basis-2/6 lg:basis-1/4 mx-auto rounded-lg overflow-hidden border flex justify-center items-center content-center bg-white aspect-square">
-                    <img src="/static/experience/extra/LightDance.jpeg" className="object-cover" alt="lightdance" />
+                    {/* <img src="/static/experience/extra/LightDance.jpeg" className="object-cover" alt="lightdance" /> */}
+                    <Image
+                        src={icon}
+                        alt="lightdance"
+                        className="object-cover"
+                        priority={true}
+                    />
                 </div>
                 <div className="basis-full sm:basis-4/6 lg:basis-3/4 pl-5 max-sm:pr-5 break-words max-sm:text-center">
                     <div className="font-extrabold text-black dark:text-white text-lg">

@@ -1,6 +1,8 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import ImgList from "../ImgList";
 import TechBox, { TechDictType } from "../TechBox";
+import Image from "next/image";
+import LightDance_gif from '@/static/portfolio/lightdance/lightdance.gif'
 
 const techList: TechDictType[] = [
     "HTML", "CSS", "Javascript", "Typescript", "MaterialUI", "NodeJS", "ExpressJS", "GraphQL", "Prisma", "PostgreSQL", "Redis", "Docker", "Git"
@@ -47,7 +49,13 @@ const EditorBoard = ({ setOpen }: {
                         </a>
                         {/* image block */}
                         <div className="mx-auto rounded-lg overflow-hidden flex justify-center items-center content-center bg-white w-full h-fit">
-                            <img className="w-full h-fit object-cover" src="/static/portfolio/lightdance/lightdance.gif" />
+                            {/* <img className="w-full h-fit object-cover" src="/static/portfolio/lightdance/lightdance.gif" /> */}
+                            <Image
+                                src={LightDance_gif}
+                                alt="lightdance_gif"
+                                className="w-full h-fit object-cover"
+                                priority={true}
+                            />
                         </div>
                         <div className="font-bold text-2xl mb-2 mt-10">
                             【Introduction】
