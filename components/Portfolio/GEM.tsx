@@ -18,7 +18,6 @@ const GEMBoard = ({ setOpen }: {
         >
             <div className="max-h-90screen max-sm:max-h-80screen overflow-y-scroll overscroll-contain bg-[#F1F1F1] dark:bg-gray-700 rounded-lg xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-80screen " onClick={(e) => { e.stopPropagation(); }}>
                 <div className="flex flex-col">
-                    {/* <ImgList imgList={imgList} /> */}
                     <div className="p-4 my-10 text-center flex flex-col items-center">
                         <div className="font-extrabold text-blue-600 dark:text-blue-400 text-3xl text-center mb-5">
                             GEM e2 Vehicle Autonomous Lane Following

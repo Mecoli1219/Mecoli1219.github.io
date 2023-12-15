@@ -1,16 +1,21 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "../../ImgList";
+import ImgList, { ImgListType } from "../../ImgList";
 import Image from "next/image";
 import icon from '@/static/experience/extra/eesa.png'
+import Img_1 from "@/static/experience/extra/2020_Info.webp";
+import Img_2 from "@/static/experience/extra/2021_Info.webp";
+import Img_3 from "@/static/experience/extra/2022_Info.webp";
+import Img_4 from "@/static/experience/extra/eesa.png";
 
 const EESABoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
-    const imgList = [
-        "/static/experience/extra/2020_Info.webp",
-        "/static/experience/extra/2021_Info.webp",
-        "/static/experience/extra/2022_Info.webp",
-        "/static/experience/extra/eesa.png",
+
+    const imgList: ImgListType = [
+        [Img_1, "object-cover"],
+        [Img_2, "object-cover"],
+        [Img_3, "object-cover"],
+        [Img_4, "object-cover"],
     ]
 
     return <div className="absolute" >

@@ -1,18 +1,25 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "../../ImgList";
+import ImgList, { ImgListType } from "../../ImgList";
 import Image from "next/image";
 import icon from '@/static/experience/extra/LightDance.jpeg'
+import Img_1 from "@/static/experience/extra/2022_LD.jpeg"
+import Img_2 from "@/static/experience/extra/2023_LD.jpeg"
+import Img_3 from "@/static/experience/extra/LightDance_all.webp"
+import Img_4 from "@/static/experience/extra/All.webp"
+import Img_5 from "@/static/experience/extra/LightDance.jpeg"
 
 const LightDanceBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
-    const imgList = [
-        "/static/experience/extra/2022_LD.jpeg",
-        "/static/experience/extra/2023_LD.jpeg",
-        "/static/experience/extra/LightDance_all.webp",
-        "/static/experience/extra/All.webp",
-        "/static/experience/extra/LightDance.jpeg",
+
+    const imgList: ImgListType = [
+        [Img_1, "object-cover"],
+        [Img_2, "object-cover"],
+        [Img_3, "object-cover"],
+        [Img_4, "object-cover"],
+        [Img_5, "object-cover"],
     ]
+
 
     return <div className="absolute">
         <div className="fixed flex top-0 left-0 right-0 w-full h-screen z-60 bg-black bg-opacity-70 items-center justify-center"

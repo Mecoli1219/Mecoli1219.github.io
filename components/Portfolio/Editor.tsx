@@ -1,8 +1,13 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "../ImgList";
+import ImgList, { ImgListType } from "../ImgList";
 import TechBox, { TechDictType } from "../TechBox";
 import Image from "next/image";
 import LightDance_gif from '@/static/portfolio/lightdance/lightdance.gif'
+import Img_1 from "@/static/experience/extra/2022_LD.jpeg"
+import Img_2 from "@/static/experience/extra/2023_LD.jpeg"
+import Img_3 from "@/static/experience/extra/LightDance_all.webp"
+import Img_4 from "@/static/experience/extra/All.webp"
+import Img_5 from "@/static/experience/extra/LightDance.jpeg"
 
 const techList: TechDictType[] = [
     "HTML", "CSS", "Javascript", "Typescript", "MaterialUI", "NodeJS", "ExpressJS", "GraphQL", "Prisma", "PostgreSQL", "Redis", "Docker", "Git"
@@ -12,12 +17,12 @@ const EditorBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
 
-    const imgList = [
-        "/static/experience/extra/2022_LD.jpeg",
-        "/static/experience/extra/2023_LD.jpeg",
-        "/static/experience/extra/LightDance_all.webp",
-        "/static/experience/extra/All.webp",
-        "/static/experience/extra/LightDance.jpeg",
+    const imgList: ImgListType = [
+        [Img_1, "object-cover"],
+        [Img_2, "object-cover"],
+        [Img_3, "object-cover"],
+        [Img_4, "object-cover"],
+        [Img_5, "object-cover"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >

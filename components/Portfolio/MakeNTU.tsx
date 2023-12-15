@@ -1,6 +1,14 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "../ImgList";
+import ImgList, { ImgListType } from "../ImgList";
 import TechBox, { TechDictType } from "../TechBox";
+import Img_1 from "@/static/portfolio/MakeNTU/Eureka.webp";
+import Img_2 from "@/static/portfolio/MakeNTU/Main-1.webp";
+import Img_3 from "@/static/portfolio/MakeNTU/Machine_1.webp";
+import Img_4 from "@/static/portfolio/MakeNTU/Machine_2.webp";
+import Img_5 from "@/static/portfolio/MakeNTU/Tool_1.webp";
+import Img_6 from "@/static/portfolio/MakeNTU/Tool_2.webp";
+import Img_7 from "@/static/portfolio/MakeNTU/Tool_3.webp";
+import Img_8 from "@/static/portfolio/MakeNTU/makeNTU_Group.webp";
 
 const techList: TechDictType[] = [
     "HTML", "CSS", "Javascript", "MaterialUI", "NodeJS", "ExpressJS", "GraphQL", "MongoDB", "Redis", "Docker", "Git"
@@ -9,15 +17,16 @@ const techList: TechDictType[] = [
 const MakeNTUBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
-    const imgList = [
-        ["/static/portfolio/MakeNTU/Eureka.webp", "bg-cover"],
-        ["/static/portfolio/MakeNTU/Main-1.webp", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Machine_1.webp", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Machine_2.webp", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Tool_1.webp", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Tool_2.webp", "bg-contain"],
-        ["/static/portfolio/MakeNTU/Tool_3.webp", "bg-contain"],
-        ["/static/portfolio/MakeNTU/makeNTU_Group.webp", "bg-cover"],
+
+    const imgList: ImgListType = [
+        [Img_1, "object-cover"],
+        [Img_2, "object-contain"],
+        [Img_3, "object-contain"],
+        [Img_4, "object-contain"],
+        [Img_5, "object-contain"],
+        [Img_6, "object-contain"],
+        [Img_7, "object-contain"],
+        [Img_8, "object-cover"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >

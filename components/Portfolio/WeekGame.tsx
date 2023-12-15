@@ -1,6 +1,10 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "../ImgList";
+import ImgList, { ImgListType } from "../ImgList";
 import TechBox, { TechDictType } from "../TechBox";
+import Img_1 from "@/static/portfolio/weekgame/EEweek.webp";
+import Img_2 from "@/static/portfolio/weekgame/progress.webp";
+import Img_3 from "@/static/portfolio/weekgame/result.webp";
+import Img_4 from "@/static/portfolio/weekgame/leaderboard.webp";
 
 const techList: TechDictType[] = [
     "HTML", "CSS", "Javascript", "NodeJS", "ExpressJS", "MongoDB", "Docker", "Git"
@@ -9,11 +13,12 @@ const techList: TechDictType[] = [
 const WeekGameBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
-    const imgList = [
-        ["/static/portfolio/weekgame/EEweek.webp", "bg-cover"],
-        ["/static/portfolio/weekgame/progress.webp", "bg-contain"],
-        ["/static/portfolio/weekgame/result.webp", "bg-contain"],
-        ["/static/portfolio/weekgame/leaderboard.webp", "bg-contain"],
+
+    const imgList: ImgListType = [
+        [Img_1, "object-cover"],
+        [Img_2, "object-contain"],
+        [Img_3, "object-contain"],
+        [Img_4, "object-contain"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >

@@ -1,6 +1,10 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import ImgList from "../ImgList";
+import ImgList, { ImgListType } from "../ImgList";
 import TechBox, { TechDictType } from "../TechBox";
+import Img_1 from "@/static/portfolio/AVSuperb/avsuperb-1.webp";
+import Img_2 from "@/static/portfolio/AVSuperb/avsuperb-2.webp";
+import Img_3 from "@/static/portfolio/AVSuperb/avsuperb-3.webp";
+import Img_4 from "@/static/portfolio/AVSuperb/avsuperb-4.webp";
 
 const techList: TechDictType[] = [
     "HTML", "CSS", "Typescript", "Next.js", "Tailwind", "GoogleAPI", "Docker", "Git"
@@ -9,11 +13,12 @@ const techList: TechDictType[] = [
 const AVSuperbBoard = ({ setOpen }: {
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
-    const imgList = [
-        ["/static/portfolio/AVSuperb/avsuperb-1.webp", "bg-contain"],
-        ["/static/portfolio/AVSuperb/avsuperb-2.webp", "bg-contain"],
-        ["/static/portfolio/AVSuperb/avsuperb-3.webp", "bg-contain"],
-        ["/static/portfolio/AVSuperb/avsuperb-4.webp", "bg-contain"],
+
+    const imgList: ImgListType = [
+        [Img_1, "object-contain"],
+        [Img_2, "object-contain"],
+        [Img_3, "object-contain"],
+        [Img_4, "object-contain"],
     ]
 
     return <div className="absolute" onScroll={(e) => { e.stopPropagation() }} >
