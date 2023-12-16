@@ -116,6 +116,7 @@ const researchData: ResearchDataType = {
       authors: [
         {
           name: "Hsiang-Chun Wang*",
+          link: "https://hsiangchun0205.github.io/"
         },
         {
           name: "Shang-Fu Chen*",
