@@ -120,6 +120,7 @@ const researchData: ResearchDataType = {
         },
         {
           name: "Shang-Fu Chen*",
+          link: "https://shangfuchen.github.io/"
         },
         {
           name: "Ming-Hao Hsu",
