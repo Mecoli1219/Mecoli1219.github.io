@@ -43,18 +43,19 @@ export default function App({ Component, pageProps }: CustomAppProps) {
             <Layout>
               <>
                 <Component {...pageProps} />
-                <SpeedInsights />
                 <Analytics />
               </>
             </Layout>
           </div>
+          {/* <SpeedInsights /> */}
+
         </>
           : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 min-h-screen duration-500">
             <Navbar />
             <Layout>
               <div className='flex items-center pb-12 m-auto'>
                 <Component {...pageProps} />
-                <SpeedInsights />
+                {/* <SpeedInsights /> */}
                 <Analytics />
               </div>
             </Layout>
