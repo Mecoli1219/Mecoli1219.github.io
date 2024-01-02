@@ -35,14 +35,26 @@ export default function ImgList({ imgList }: { imgList: ImgListType }) {
             // :
             // <div style={{ backgroundImage: `url(${imgList[currentIndex][0]})` }} className={`w-full h-[calc(100%-24px)] round-2xl bg-center duration-500 bg-no-repeat bg-white dark:bg-black ${imgList[currentIndex][1]} transition-bg-size`}>
             // </div>
-            <div className={`w-full h-[calc(100%-24px)] round-2xl bg-center bg-white dark:bg-black overflow-hidden`}>
-                <Image
+            <div className={`w-full h-[calc(100%-24px)] round-2xl bg-center bg-white dark:bg-black overflow-hidden relative`}>
+                {
+                    imgList.map((img, index) => {
+                        return <Image
+                            key={index}
+                            src={img[0]}
+                            alt="demo_image"
+                            className={`w-full h-full object-cover ${img[1]} ${index === currentIndex ? "opacity-100" : "opacity-0"} absolute transition-opacity duration-500`}
+                            sizes="80vw"
+                            priority={true}
+                        />
+                    })
+                }
+                {/* <Image
                     src={imgList[currentIndex][0]}
                     alt="demo_image"
                     className={`w-full h-full object-cover ${imgList[currentIndex][1]}`}
                     sizes="80vw"
                     priority={true}
-                />
+                /> */}
             </div>
         }
         {/* <img src={imgList[currentIndex]} className="w-full h-[calc(100%-24px)] round-2xl bg-center bg-cover duration-500" /> */}
