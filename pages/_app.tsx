@@ -3,8 +3,8 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head';
 import { ThemeProvider } from "next-themes";
 import Navbar from '../components/Navbar';
-import { useEffect } from 'react';
 import { Layout } from '../components/Layout';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 type CustomAppProps = AppProps & {
   Component: {
@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }: CustomAppProps) {
           <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 duration-500">
             <Layout>
               <Component {...pageProps} />
+              <SpeedInsights />
             </Layout>
           </div>
         </>
@@ -49,6 +50,7 @@ export default function App({ Component, pageProps }: CustomAppProps) {
             <Layout>
               <div className='flex items-center pb-12 m-auto'>
                 <Component {...pageProps} />
+                <SpeedInsights />
               </div>
             </Layout>
           </div>

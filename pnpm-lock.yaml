@@ -17,6 +17,9 @@ dependencies:
   '@types/three':
     specifier: ^0.146.0
     version: 0.146.0
+  '@vercel/speed-insights':
+    specifier: ^1.0.2
+    version: 1.0.2
   eslint:
     specifier: 8.28.0
     version: 8.28.0
@@ -383,6 +386,11 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.45.0
       eslint-visitor-keys: 3.3.0
+    dev: false
+
+  /@vercel/speed-insights@1.0.2:
+    resolution: {integrity: sha512-y5HWeB6RmlyVYxJAMrjiDEz8qAIy2cit0fhBq+MD78WaUwQvuBnQlX4+5MuwVTWi46bV3klaRMq83u9zUy1KOg==}
+    requiresBuild: true
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.8.1):
