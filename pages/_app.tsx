@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from '../components/Navbar';
 import { Layout } from '../components/Layout';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 type CustomAppProps = AppProps & {
   Component: {
@@ -40,8 +41,11 @@ export default function App({ Component, pageProps }: CustomAppProps) {
           <Navbar />
           <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 duration-500">
             <Layout>
-              <Component {...pageProps} />
-              <SpeedInsights />
+              <>
+                <Component {...pageProps} />
+                <SpeedInsights />
+                <Analytics />
+              </>
             </Layout>
           </div>
         </>
@@ -51,6 +55,7 @@ export default function App({ Component, pageProps }: CustomAppProps) {
               <div className='flex items-center pb-12 m-auto'>
                 <Component {...pageProps} />
                 <SpeedInsights />
+                <Analytics />
               </div>
             </Layout>
           </div>
