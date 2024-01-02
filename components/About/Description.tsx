@@ -11,6 +11,7 @@ export default function Description() {
                     src={avatar}
                     alt="avatar"
                     className=" object-cover"
+                    sizes="100vw"
                     priority={true}
                 />
             </div>
@@ -29,12 +30,13 @@ export default function Description() {
                 </div>
             </div>
             {/* Image Part */}
-            <div className="ml-5 max-sm:hidden basis-2/5 xl:basis-2/6 mx-auto rounded-2xl overflow-hidden flex justify-center items-center content-center bg-white h-fit max-md:mb-5">
+            <div className="ml-5 max-sm:hidden basis-2/5 xl:basis-2/6 mx-auto rounded-2xl overflow-hidden bg-white h-fit max-md:mb-5">
                 {/* <img src="/static/avatar.webp" className="object-cover" alt="avatar" /> */}
                 <Image
                     src={avatar}
                     alt="avatar"
-                    className=" object-cover"
+                    className="object-cover w-full"
+                    sizes="(max-width: 1280px) 50vw, 33vw"
                     priority={true}
                 />
             </div>

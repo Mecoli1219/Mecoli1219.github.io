@@ -62,6 +62,7 @@ const EditorBoard = ({ setOpen }: {
                                 src={LightDance_gif}
                                 alt="lightdance_gif"
                                 className="w-full h-fit object-cover"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 30vw"
                                 priority={true}
                             />
                         </div>

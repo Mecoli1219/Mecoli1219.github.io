@@ -11,6 +11,7 @@ export default function Publication({ research, index }: { research: ResearchTyp
                     src={research.image}
                     alt={research.title}
                     className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
                     priority={true}
                 />
             </div>

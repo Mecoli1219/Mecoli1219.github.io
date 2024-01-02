@@ -38,13 +38,13 @@ export default function App({ Component, pageProps }: CustomAppProps) {
       {
         Component.transparentNavbar ? <>
           <Navbar />
-          <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 ">
+          <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 duration-500">
             <Layout>
               <Component {...pageProps} />
             </Layout>
           </div>
         </>
-          : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50  min-h-screen ">
+          : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 min-h-screen duration-500">
             <Navbar />
             <Layout>
               <div className='flex items-center pb-12 m-auto'>

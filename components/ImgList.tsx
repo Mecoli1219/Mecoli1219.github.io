@@ -40,16 +40,17 @@ export default function ImgList({ imgList }: { imgList: ImgListType }) {
                     src={imgList[currentIndex][0]}
                     alt="demo_image"
                     className={`w-full h-full object-cover ${imgList[currentIndex][1]}`}
+                    sizes="80vw"
                     priority={true}
                 />
             </div>
         }
         {/* <img src={imgList[currentIndex]} className="w-full h-[calc(100%-24px)] round-2xl bg-center bg-cover duration-500" /> */}
-        <div className="hidden group-hover:block top-[50%] absolute -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactLeft size={30} onClick={prevImg} />
+        <div className="hidden group-hover:block top-[50%] absolute -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" onClick={prevImg}>
+            <BsChevronCompactLeft size={30} />
         </div>
-        <div className="hidden group-hover:block top-[50%] absolute -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactRight size={30} onClick={nextImg} />
+        <div className="hidden group-hover:block top-[50%] absolute -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" onClick={nextImg}>
+            <BsChevronCompactRight size={30} />
         </div>
 
         <div className="flex top-4 justify-center py-2">

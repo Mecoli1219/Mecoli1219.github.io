@@ -140,7 +140,7 @@ export default function TechBox({ tech, bgColor = "bg-gray-200 dark:bg-gray-600"
                     src={techDict[tech]}
                     alt={tech}
                     className="w-full aspect-square object-contain"
-                    priority={true}
+                    sizes="30vw"
                 />
             </div>
             <p className="text-sm md:text-base font-semibold text-center pb-4 pt-1">{tech}</p>

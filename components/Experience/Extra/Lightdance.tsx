@@ -117,6 +117,7 @@ export default function LightDance() {
                         src={icon}
                         alt="lightdance"
                         className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 30vw"
                         priority={true}
                     />
                 </div>
