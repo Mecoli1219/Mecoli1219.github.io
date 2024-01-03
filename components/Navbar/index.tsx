@@ -62,14 +62,11 @@ export default function Navbar() {
           <div className="flex md:flex-row justify-between items-center max-w-6xl mx-auto">
             <div className="flex flex-col ">
               <Link href="/" className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg px-4 py-3">
-                <div className="font-semibold text-xl text-gray-700 dark:text-white inline">
+                <div className="font-semibold text-xl text-gray-800 dark:text-white inline">
                   {userData.name}
                 </div>
-                <div className="text-xl font-light text-gray-500 dark:text-gray-300 inline pl-1 max-sm:hidden"> Website
+                <div className="text-xl font-light text-gray-600 dark:text-gray-300 inline pl-1 max-sm:hidden"> Website
                 </div>
-                {/* <p className="hidden md:block text-base font-light text-gray-500 dark:text-gray-300">
-                  {userData.designation}
-                </p> */}
               </Link>
             </div>
 
@@ -92,7 +89,9 @@ export default function Navbar() {
 
             <div className=" items-center hidden lg:flex flex-row ">
 
-              <a href={userData.socialLinks.github} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2">
+              <a href={userData.socialLinks.github}
+                aria-label="Github"
+                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -105,7 +104,9 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.facebook} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+              <a href={userData.socialLinks.facebook}
+                aria-label="Facebook"
+                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -118,7 +119,9 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.instagram} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+              <a href={userData.socialLinks.instagram}
+                aria-label="Instagram"
+                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -131,7 +134,9 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={"https://musescore.com/user/11455091?share=copy_link"} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+              <a href={"https://musescore.com/user/11455091?share=copy_link"}
+                aria-label="Musescore"
+                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -144,7 +149,9 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.linkin} className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+              <a href={userData.socialLinks.linkin}
+                aria-label="Linkedin"
+                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
                 <svg xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"

@@ -44,7 +44,6 @@ export default function ImgList({ imgList }: { imgList: ImgListType }) {
                             alt="demo_image"
                             className={`w-full h-full object-cover ${img[1]} ${index === currentIndex ? "opacity-100" : "opacity-0"} absolute transition-opacity duration-500`}
                             sizes="80vw"
-                            priority={true}
                         />
                     })
                 }

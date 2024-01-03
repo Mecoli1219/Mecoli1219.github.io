@@ -10,7 +10,7 @@ function Publications() {
         </h1>
         <div className="text-container max-w-md mx-auto pt-2 border-t-2 border-gray-400">
           <p
-            className="leading-normal text-xl pb-5 text-center text-gray-500 dark:text-gray-300"
+            className="leading-normal text-xl pb-5 text-center text-gray-600 dark:text-gray-300"
           >
             Depth fuels expertise, breadth sparks innovation.
           </p>
