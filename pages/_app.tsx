@@ -43,7 +43,6 @@ export default function App({ Component, pageProps }: CustomAppProps) {
             <Layout>
               <>
                 <Component {...pageProps} />
-                <Analytics />
               </>
             </Layout>
           </div>
@@ -56,11 +55,11 @@ export default function App({ Component, pageProps }: CustomAppProps) {
               <div className='flex items-center pb-12 m-auto'>
                 <Component {...pageProps} />
                 {/* <SpeedInsights /> */}
-                <Analytics />
               </div>
             </Layout>
           </div>
       }
+      <Analytics />
     </ThemeProvider>
   );
 }
