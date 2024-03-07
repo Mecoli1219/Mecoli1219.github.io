@@ -37,8 +37,8 @@ export default function Research() {
                                         </b>
                                     </div>
                                     <ul className="list-disc ml-4">
+                                        <li><b>[Submit to ICML&apos;24]</b> Diffusion Rewards Guided Adversarial Imitation Learning</li>
                                         <li><b>[ICML Workshop&apos;23]</b> Diffusion Model-Augmented Behavioral Cloning</li>
-                                        <li>Adversarial Diffusion Model for Inverse Reinforcement Learning</li>
                                         <li>Integration of NeRFs into Reinforcement Learning</li>
                                     </ul>
                                 </div>
@@ -109,7 +109,7 @@ export default function Research() {
                                         </b>
                                     </div>
                                     <ul className="list-disc ml-4">
-                                        <li><b>[Submitted to ICASSP&apos;24]</b> AV-SUPERB: A Multi-Task Evaluation Benchmark for Audio-Visual Representation Models</li>
+                                        <li><b>[ICASSP&apos;24]</b> AV-SUPERB: A Multi-Task Evaluation Benchmark for Audio-Visual Representation Models</li>
                                         <li>Impact of Language Family Distance on few-shot Transfer for Pretrained Speech Upstream Models</li>
                                     </ul>
                                 </div>
@@ -143,7 +143,7 @@ export default function Research() {
                                         <b className="text-black dark:text-white">
                                             {"Project: "}
                                         </b>
-                                        <b>[SIGDIAL 2022]</b> Controllable User Dialogue Act Augmentation for Dialogue State Tracking
+                                        <b>[SIGDIAL&apos;22]</b> Controllable User Dialogue Act Augmentation for Dialogue State Tracking
                                     </div>
                                 </div>
                             </td>
