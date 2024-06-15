@@ -1,24 +1,20 @@
-import Awards from "../components/About/Awards";
-import Contact from "../components/About/Contact";
-import Description from "../components/About/Description";
-import Education from "../components/About/Education";
+import Awards from '../components/About/Awards';
+import Contact from '../components/About/Contact';
+import Description from '../components/About/Description';
+import Education from '../components/About/Education';
 
 function About() {
   return (
     <>
       {/* <div className="justify-center align-middle text-center flex flex-row items-center"> */}
-      <div className="mx-auto w-screen xl:w-4xl lg:w-3xl md:w-2xl px-5 flex flex-col ">
-        <h1 className="text-4xl sm:text-5xl font-bold pt-10 pb-5 text-center w-full">
-          About Me.
-        </h1>
-        <div className="text-container max-w-md mx-auto pt-2 border-t-2 border-gray-400">
-          <p
-            className="leading-normal text-xl pb-5 text-center text-gray-600 dark:text-gray-300"
-          >
+      <div className="mx-auto flex w-screen flex-col px-5 md:w-2xl lg:w-3xl xl:w-4xl">
+        <h1 className="w-full pb-5 pt-10 text-center text-4xl font-bold sm:text-5xl">About Me.</h1>
+        <div className="text-container mx-auto max-w-md border-t-2 border-gray-400 pt-2">
+          <p className="pb-5 text-center text-xl leading-normal text-gray-600 dark:text-gray-300">
             Software Engineer & Researcher in Deep Learning.
           </p>
         </div>
-        <div className="flex flex-col space-y-16 mt-10 px-5 max-sm:px-0 mx-auto items-center box-border w-full">
+        <div className="mx-auto mt-10 box-border flex w-full flex-col items-center space-y-16 px-5 max-sm:px-0">
           <Description />
           <Education />
           <Awards />
@@ -26,9 +22,8 @@ function About() {
         </div>
       </div>
       {/* </div> */}
-
     </>
-  )
+  );
 }
 
-export default About
+export default About;

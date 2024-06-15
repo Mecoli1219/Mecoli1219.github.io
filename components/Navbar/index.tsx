@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useContext } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useTheme } from "next-themes";
-import { NavbarMenu } from "./NavbarMenu";
-import userData from "../../constants/data";
+import React, { useEffect, useState, useContext } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
+import { NavbarMenu } from './NavbarMenu';
+import generalData from '../../constants/general';
 
 export default function Navbar() {
   const router = useRouter();
@@ -17,11 +17,11 @@ export default function Navbar() {
     setMounted(true);
   }, []);
   let items: [string, string][] = [
-    ["About", "/about"],
-    ["Experience", "/experience"],
-    ["Publications", "/publications"],
-    ["Portfolio", "/portfolio"],
-    ["Resume", "/resume/main.pdf"],
+    ['About', '/about'],
+    ['Experience', '/experience'],
+    ['Publications', '/publications'],
+    ['Portfolio', '/portfolio'],
+    ['Resume', '/resume/main.pdf'],
   ];
 
   const barHeight: number = 48;
@@ -40,7 +40,7 @@ export default function Navbar() {
       // find current scroll position
       const currentScrollPos = window.pageYOffset;
       // set state based on location info (explained in more detail below)
-      setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < barHeight);
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < barHeight);
       // set state to new scroll position
       setPrevScrollPos(currentScrollPos);
     };
@@ -49,49 +49,60 @@ export default function Navbar() {
   }, [prevScrollPos, visible]);
   return (
     <div className="max-w-screen">
-      {
-        openMenu && (
-          // full page menu
-          <NavbarMenu setOpenMenu={setOpenMenu} items={items} theme={theme} setTheme={setTheme} mounted={mounted} />
-        )
-      }
-      <div className={`relative top-0 `}>
-        <div className={`transition-top duration-500 max-w-screen px-4 py-10 h-32 fixed left-0 right-0 z-nav 
-          ${visible ? "top-0 " : "-top-32 "} 
-          ${router.pathname === "/" ? "" : "bg-[#F1F1F1] mt-0 dark:bg-gray-900"}`}>
-          <div className="flex md:flex-row justify-between items-center max-w-6xl mx-auto">
-            <div className="flex flex-col ">
-              <Link href="/" className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg px-4 py-3">
-                <div className="font-semibold text-xl text-gray-800 dark:text-white inline">
-                  {userData.name}
+      {openMenu && (
+        // full page menu
+        <NavbarMenu
+          setOpenMenu={setOpenMenu}
+          items={items}
+          theme={theme}
+          setTheme={setTheme}
+          mounted={mounted}
+        />
+      )}
+      <div className={`relative top-0`}>
+        <div
+          className={`transition-top fixed left-0 right-0 z-nav h-32 max-w-screen px-4 py-10 duration-500 ${visible ? 'top-0' : '-top-32'} ${router.pathname === '/' ? '' : 'mt-0 bg-[#F1F1F1] dark:bg-gray-900'}`}
+        >
+          <div className="mx-auto flex max-w-6xl items-center justify-between md:flex-row">
+            <div className="flex flex-col">
+              <Link
+                href="/"
+                className="rounded-lg px-4 py-3 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+              >
+                <div className="inline text-xl font-semibold text-gray-800 dark:text-white">
+                  {generalData.name}
                 </div>
-                <div className="text-xl font-light text-gray-600 dark:text-gray-300 inline pl-1 max-sm:hidden"> Website
+                <div className="inline pl-1 text-xl font-light text-gray-600 dark:text-gray-300 max-sm:hidden">
+                  {' '}
+                  Website
                 </div>
               </Link>
             </div>
 
-            <div className="lg:space-x-1 hidden lg:block">
-              {
-                items.map((item) => {
-                  return <Link
+            <div className="hidden lg:block lg:space-x-1">
+              {items.map((item) => {
+                return (
+                  <Link
                     href={item[1]}
                     key={item[0]}
-                    className={`text-base hover:bg-white hover:dark:bg-gray-800 hover:shadow-lg px-3 py-3 rounded-lg border border-transparent ${router.asPath === item[1]
-                      ? "text-gray-800 font-bold dark:text-gray-200"
-                      : "text-gray-600 dark:text-gray-400 font-light"
-                      }`}
+                    className={`rounded-lg border border-transparent px-3 py-3 text-base hover:bg-white hover:shadow-lg hover:dark:bg-gray-800 ${
+                      router.asPath === item[1]
+                        ? 'font-bold text-gray-800 dark:text-gray-200'
+                        : 'font-light text-gray-600 dark:text-gray-400'
+                    }`}
                   >
                     {item[0]}
                   </Link>
-                })
-              }
+                );
+              })}
             </div>
 
-            <div className=" items-center hidden lg:flex flex-row ">
-
-              <a href={userData.socialLinks.github}
+            <div className="hidden flex-row items-center lg:flex">
+              <a
+                href={generalData.github}
                 aria-label="Github"
-                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2">
+                className="rounded-lg p-2 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -104,9 +115,11 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.facebook}
+              <a
+                href={generalData.facebook}
                 aria-label="Facebook"
-                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+                className="rounded-lg p-2 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -119,9 +132,11 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.instagram}
+              <a
+                href={generalData.instagram}
                 aria-label="Instagram"
-                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+                className="rounded-lg p-2 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -134,9 +149,11 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={"https://musescore.com/user/11455091?share=copy_link"}
+              <a
+                href={'https://musescore.com/user/11455091?share=copy_link'}
                 aria-label="Musescore"
-                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
+                className="rounded-lg p-2 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -149,15 +166,19 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href={userData.socialLinks.linkin}
+              <a
+                href={generalData.linkin}
                 aria-label="Linkedin"
-                className="hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2" >
-                <svg xmlns="http://www.w3.org/2000/svg"
+                className="rounded-lg p-2 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
                   className="bi bi-linkedin h-5 w-5"
-                  viewBox="0 0 16 16">
+                  viewBox="0 0 16 16"
+                >
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
               </a>
@@ -165,8 +186,8 @@ export default function Navbar() {
               <button
                 aria-label="Toggle Dark Mode"
                 type="button"
-                className="focus:outline-none hover:bg-white rounded-lg hover:dark:bg-gray-800 hover:shadow-lg p-2 ml-4"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="ml-4 rounded-lg p-2 hover:bg-white hover:shadow-lg focus:outline-none hover:dark:bg-gray-800"
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               >
                 {mounted && (
                   <svg
@@ -174,9 +195,9 @@ export default function Navbar() {
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     stroke="currentColor"
-                    className="w-4 h-4 text-yellow-500 dark:text-yellow-500"
+                    className="h-4 w-4 text-yellow-500 dark:text-yellow-500"
                   >
-                    {theme === "dark" ? (
+                    {theme === 'dark' ? (
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -197,11 +218,11 @@ export default function Navbar() {
             </div>
 
             {/* menu button */}
-            <div className="flex flex-row-reverse justify-between items-center lg:hidden">
+            <div className="flex flex-row-reverse items-center justify-between lg:hidden">
               <button
                 aria-label="Menu"
                 title="Menu"
-                className="dark:text-white block px-4 py-3 hover:bg-white hover:shadow-lg right-0 rounded-lg hover:dark:bg-gray-800"
+                className="right-0 block rounded-lg px-4 py-3 hover:bg-white hover:shadow-lg dark:text-white hover:dark:bg-gray-800"
                 onClick={() => setOpenMenu(!openMenu)}
               >
                 <svg
@@ -225,16 +246,13 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-
-
             </div>
           </div>
         </div>
-
-
       </div>
-      <div className={`max-w-screen relative ${openMenu ? "top-32" : " top-0"} left-0 right-0 h-32`}></div>
-
+      <div
+        className={`relative max-w-screen ${openMenu ? 'top-32' : 'top-0'} left-0 right-0 h-32`}
+      ></div>
     </div>
   );
 }

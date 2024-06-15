@@ -1,5 +1,5 @@
-import * as THREE from "three";
-import { Font } from "three/examples/jsm/loaders/FontLoader";
+import * as THREE from 'three';
+import { Font } from 'three/examples/jsm/loaders/FontLoader';
 
 type ParticleTextData = {
   text: string;
@@ -9,10 +9,9 @@ type ParticleTextData = {
   textSize: number;
   area: number;
   ease: number;
-}
+};
 
 export default class Environment {
-
   font: Font;
   text: string;
   particle: THREE.Texture;
@@ -26,7 +25,7 @@ export default class Environment {
     this.font = font;
     this.text = text;
     this.particle = particle;
-    this.container = document.querySelector("#magic");
+    this.container = document.querySelector('#magic');
     this.scene = new THREE.Scene();
     this.createCamera();
     this.setup();
@@ -35,7 +34,7 @@ export default class Environment {
   }
 
   bindEvents() {
-    window.addEventListener("resize", this.onWindowResize.bind(this));
+    window.addEventListener('resize', this.onWindowResize.bind(this));
   }
 
   setup() {
@@ -45,7 +44,7 @@ export default class Environment {
       this.particle,
       this.camera,
       this.renderer,
-      this.text
+      this.text,
     );
   }
 
@@ -60,7 +59,7 @@ export default class Environment {
       65,
       this.container.clientWidth / this.container.clientHeight,
       1,
-      10000
+      10000,
     );
     this.camera.position.set(0, 0, 100);
   }
@@ -104,14 +103,20 @@ class CreateParticles {
   geometryCopy!: THREE.BufferGeometry;
   touchable: Boolean;
 
-
-  constructor(scene: THREE.Scene, font: Font, particleImg: THREE.Texture, camera: THREE.PerspectiveCamera, renderer: THREE.WebGLRenderer, text: string) {
+  constructor(
+    scene: THREE.Scene,
+    font: Font,
+    particleImg: THREE.Texture,
+    camera: THREE.PerspectiveCamera,
+    renderer: THREE.WebGLRenderer,
+    text: string,
+  ) {
     this.scene = scene;
     this.font = font;
     this.text = text;
     this.colorChange = new THREE.Color();
     const size = Math.min(20, window.innerWidth / 10 / 8);
-    const area = size ** 2 / 2
+    const area = size ** 2 / 2;
     this.data = {
       text: this.text,
       amount: 1500,
@@ -129,7 +134,6 @@ class CreateParticles {
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2(-200, 200);
 
-
     this.buttom = false;
     this.touchable = true;
 
@@ -139,7 +143,7 @@ class CreateParticles {
   setup() {
     const geometry = new THREE.PlaneGeometry(
       this.visibleWidthAtZDepth(100, this.camera),
-      this.visibleHeightAtZDepth(100, this.camera)
+      this.visibleHeightAtZDepth(100, this.camera),
     );
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true });
     this.planeArea = new THREE.Mesh(geometry, material);
@@ -148,12 +152,12 @@ class CreateParticles {
   }
 
   bindEvents() {
-    document.addEventListener("mousedown", this.onMouseDown.bind(this));
-    document.addEventListener("mousemove", this.onMouseMove.bind(this));
-    document.addEventListener("mouseup", this.onMouseUp.bind(this));
-    document.addEventListener("touchstart", this.onTouchStart.bind(this));
-    document.addEventListener("touchmove", this.onTouchMove.bind(this));
-    document.addEventListener("touchend", this.onTouchEnd.bind(this));
+    document.addEventListener('mousedown', this.onMouseDown.bind(this));
+    document.addEventListener('mousemove', this.onMouseMove.bind(this));
+    document.addEventListener('mouseup', this.onMouseUp.bind(this));
+    document.addEventListener('touchstart', this.onTouchStart.bind(this));
+    document.addEventListener('touchmove', this.onTouchMove.bind(this));
+    document.addEventListener('touchend', this.onTouchEnd.bind(this));
   }
 
   onMouseDown(event: MouseEvent) {
@@ -356,7 +360,7 @@ class CreateParticles {
     for (let x = 0; x < shapes.length; x++) {
       let shape = shapes[x];
 
-      const amountPoints = shape.type === "Path" ? this.data.amount / 2 : this.data.amount;
+      const amountPoints = shape.type === 'Path' ? this.data.amount / 2 : this.data.amount;
 
       let points = shape.getSpacedPoints(amountPoints);
 
@@ -370,7 +374,7 @@ class CreateParticles {
     for (let x = 0; x < pathShapes.length; x++) {
       let shape = pathShapes[x];
 
-      const amountPoints = shape.type === "Path" ? this.data.amount / 2 : this.data.amount;
+      const amountPoints = shape.type === 'Path' ? this.data.amount / 2 : this.data.amount;
 
       let points = shape.getSpacedPoints(amountPoints);
 
@@ -385,8 +389,8 @@ class CreateParticles {
     let geoParticles = new THREE.BufferGeometry().setFromPoints(thePoints);
     geoParticles.translate(xMid, yMid, 0);
 
-    geoParticles.setAttribute("customColor", new THREE.Float32BufferAttribute(colors, 3));
-    geoParticles.setAttribute("size", new THREE.Float32BufferAttribute(sizes, 1));
+    geoParticles.setAttribute('customColor', new THREE.Float32BufferAttribute(colors, 3));
+    geoParticles.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
 
     const material = new THREE.ShaderMaterial({
       uniforms: {

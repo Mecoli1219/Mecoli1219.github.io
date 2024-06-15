@@ -1,7 +1,7 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from 'next-themes';
 import Navbar from '../components/Navbar';
 import { Layout } from '../components/Layout';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -20,10 +20,7 @@ export default function App({ Component, pageProps }: CustomAppProps) {
         <title>Chun-Mao Lai</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#F1F1F1" />
-        <meta
-          name="description"
-          content="Chun-Mao (Michael) Lai's personal website"
-        />
+        <meta name="description" content="Chun-Mao (Michael) Lai's personal website" />
         <meta property="og:image" content="/favicon.ico" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="www.mecoli.net" />
@@ -36,10 +33,10 @@ export default function App({ Component, pageProps }: CustomAppProps) {
         <link rel="manifest" href="/site.webmanifest" />
         {/* <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" /> */}
       </Head>
-      {
-        Component.transparentNavbar ? <>
+      {Component.transparentNavbar ? (
+        <>
           <Navbar />
-          <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 duration-500">
+          <div className="-z-50 mt-0 bg-[#F1F1F1] font-sans duration-500 dark:bg-gray-900">
             <Layout>
               <>
                 <Component {...pageProps} />
@@ -47,15 +44,16 @@ export default function App({ Component, pageProps }: CustomAppProps) {
             </Layout>
           </div>
         </>
-          : <div className="bg-[#F1F1F1] mt-0 dark:bg-gray-900 font-sans -z-50 min-h-screen duration-500">
-            <Navbar />
-            <Layout>
-              <div className='flex items-center pb-12 m-auto'>
-                <Component {...pageProps} />
-              </div>
-            </Layout>
-          </div>
-      }
+      ) : (
+        <div className="-z-50 mt-0 min-h-screen bg-[#F1F1F1] font-sans duration-500 dark:bg-gray-900">
+          <Navbar />
+          <Layout>
+            <div className="m-auto flex items-center pb-12">
+              <Component {...pageProps} />
+            </div>
+          </Layout>
+        </div>
+      )}
       <Analytics />
       {/* <SpeedInsights /> */}
     </ThemeProvider>

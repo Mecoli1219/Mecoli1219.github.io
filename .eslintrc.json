@@ -1,5 +1,11 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals"
+    // "plugin:prettier/recommended",
+    // "plugin:react/recommended",
+    // "google",
+    // "prettier"
+  ],
   "rules": {
     "no-console": "off"
   }
