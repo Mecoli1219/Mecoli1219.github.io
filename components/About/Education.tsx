@@ -14,9 +14,7 @@ export default function Education() {
                 key={idx}
               >
                 <th className="flex basis-2/6 items-center">{education[0]}</th>
-                <td className="flex basis-4/6 items-center px-5">
-                  <div>{education[1]}</div>
-                </td>
+                <td className="flex basis-4/6 items-center px-5">{education[1]}</td>
               </tr>
             ))}
           </tbody>
