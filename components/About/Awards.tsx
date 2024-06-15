@@ -1,5 +1,6 @@
 import React from 'react';
 import { awardData } from '../../constants/about';
+import { MyTableRow } from '../utils';
 
 export default function Awards() {
   return (
@@ -9,10 +10,7 @@ export default function Awards() {
         <table className="min-w-screen border-separate border-spacing-0 overflow-x-scroll bg-transparent text-left align-middle text-base text-gray-500 dark:text-gray-300 sm:rounded-lg">
           <tbody className="">
             {awardData.map((award, idx) => (
-              <tr
-                className={`flex flex-row ${idx === 0 ? 'border-y' : 'border-b'} p-2 px-2 ${idx % 2 === 0 ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
-                key={idx}
-              >
+              <MyTableRow key={idx} idx={idx}>
                 <th className="flex w-16 items-center">
                   <p>{award[0]}</p>
                 </th>
@@ -20,7 +18,7 @@ export default function Awards() {
                   {award[1]}
                 </th>
                 <td className="flex basis-7/12 items-center px-5">{award[2]}</td>
-              </tr>
+              </MyTableRow>
             ))}
           </tbody>
         </table>

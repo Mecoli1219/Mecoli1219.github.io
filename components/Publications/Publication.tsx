@@ -24,9 +24,18 @@ export default function Publication({
         </div>
         <div className="basis-full pl-5 max-md:pr-5 md:basis-4/6 lg:basis-3/4">
           <div className="pb-2">
-            <a className="text-lg font-bold" href={research.link}>
-              {research.title}
-            </a>
+            {research.link ? (
+              <a
+                className="text-lg font-bold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={research.link}
+              >
+                {research.title}
+              </a>
+            ) : (
+              <span className="text-lg font-bold">{research.title}</span>
+            )}
           </div>
           {research.authors.map((author, index) => {
             return (
@@ -67,7 +76,12 @@ export default function Publication({
             return (
               <div key={index} className="inline pr-1">
                 [{' '}
-                <a href={value} className="text-blue-500 hover:underline dark:text-blue-300">
+                <a
+                  href={value}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline dark:text-blue-300"
+                >
                   {key}
                 </a>{' '}
                 ]
@@ -76,7 +90,7 @@ export default function Publication({
           })}
         </div>
       </div>
-      {index !== researchData.researchList.length - 1 ? (
+      {index !== researchData.length - 1 ? (
         <div
           className="mx-3 mb-12 mt-5 box-border border border-gray-400 md:mx-0 md:my-2 lg:mx-3"
           key={index}
