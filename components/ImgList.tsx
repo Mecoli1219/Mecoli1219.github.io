@@ -45,7 +45,7 @@ export default function ImgList({ imgList }: { imgList: ImgListType }) {
                 key={index}
                 src={img[0]}
                 alt="demo_image"
-                className={`h-full w-full object-cover ${img[1]} ${index === currentIndex ? 'opacity-100' : 'opacity-0'} absolute transition-opacity duration-500`}
+                className={`h-full w-full ${img[1]} ${index === currentIndex ? 'opacity-100' : 'opacity-0'} absolute transition-opacity duration-500`}
                 sizes="80vw"
               />
             );
@@ -79,7 +79,7 @@ export default function ImgList({ imgList }: { imgList: ImgListType }) {
             <div
               key={index}
               className={
-                'cursor-pointer text-2xl ' +
+                'cursor-pointer text-2xl max-sm:text-base ' +
                 (index === currentIndex
                   ? 'text-blue-500 dark:text-blue-300'
                   : 'text-gray-500 dark:text-gray-300')

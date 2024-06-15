@@ -29,6 +29,8 @@ import tensorflow from '@/static/tech/tensorflow.png';
 import huggingface from '@/static/tech/hf-logo.png';
 import mysql from '@/static/tech/mysql.png';
 import golang from '@/static/tech/go-logo.png';
+import mqtt from '@/static/tech/mqtt.png';
+import mediaPipe from '@/static/tech/mediapipe.png';
 
 export const techs: TechDictType[] = [
   'C/C++',
@@ -44,6 +46,8 @@ export const techs: TechDictType[] = [
   'HuggingFace',
   'OpenCV',
   'Flask',
+  'mediaPipe',
+  'MQTT',
   'React',
   'Next.js',
   'ThreeJS',
@@ -95,6 +99,8 @@ export const techDict = {
   HuggingFace: huggingface,
   MySQL: mysql,
   Golang: golang,
+  MQTT: mqtt,
+  mediaPipe: mediaPipe,
 };
 
 // export techDict key type

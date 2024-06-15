@@ -2,6 +2,7 @@ import Musecore from '../components/Musecore';
 import AVSuperb from '../components/Portfolio/AVSuperb';
 import Editor from '../components/Portfolio/Editor';
 import GEM from '../components/Portfolio/GEM';
+import Infant from '../components/Portfolio/InfantMonitor';
 import MakeNTU from '../components/Portfolio/MakeNTU';
 import Music from '../components/Portfolio/Music';
 import Preselect from '../components/Portfolio/Preselect';
@@ -19,6 +20,7 @@ function Portfolio() {
           </p>
         </div>
         <div className="mt-16 grid w-full grid-cols-1 gap-5 border-b-2 border-gray-400 pb-16 dark:border-gray-700 sm:grid-cols-2 xl:grid-cols-3">
+          <Infant />
           <Preselect />
           <Editor />
           <AVSuperb />
