@@ -34,140 +34,113 @@ const descriptionData = [
 const title = 'Software engineer in Web Development & Researcher about Deep Learning.';
 
 const educationData = [
-  <>
-    <th className="flex basis-2/6 items-center">
-      <a
-        href="https://www.ucsd.edu/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-      >
-        University of California at San Diego
-      </a>
-    </th>
-    <td className="flex basis-4/6 items-center px-5">
-      <div>
-        <div className="text-black dark:text-white">
-          <b>Master of Science</b> in Computer Science Engineering
-        </div>
-        <div>Sep. 2024 - Jun. 2026</div>
+  [
+    <a
+      href="https://www.ucsd.edu/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      University of California at San Diego
+    </a>,
+    <div>
+      <div className="text-black dark:text-white">
+        <b>Master of Science</b> in Computer Science Engineering
       </div>
-    </td>
-  </>,
-  <>
-    <th className="flex basis-2/6 items-center">
-      <a
-        href="https://illinois.edu/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-      >
-        University of Illinois at Urbana Champaign
-      </a>
-    </th>
-    <td className="flex basis-4/6 items-center px-5">
-      <div>
-        <div className="text-black dark:text-white">
-          <b>Exchange Program</b> in Electrical and Computer Engineering
-        </div>
-        <div>Aug. 2023 - Dec. 2023</div>
-        <ul className="list-inside list-disc">
-          <li>GPA: 4.0 / 4.0</li>
-        </ul>
+      <div>Sep. 2024 - Jun. 2026</div>
+    </div>,
+  ],
+  [
+    <a
+      href="https://illinois.edu/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      University of Illinois at Urbana Champaign
+    </a>,
+    <div>
+      <div className="text-black dark:text-white">
+        <b>Exchange Program</b> in Electrical and Computer Engineering
       </div>
-    </td>
-  </>,
-  <>
-    <th className="flex basis-2/6 items-center">
-      <a
-        href="https://www.ntu.edu.tw/english/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-      >
-        National Taiwan University
-      </a>
-    </th>
-    <td className="flex basis-4/6 items-center px-5">
-      <div>
-        <div className="text-black dark:text-white">
-          <b>Bachelor of Science in Engineering</b> at Electrical Engineering
-        </div>
-        <div>Sep. 2020 - Jun. 2024</div>
-        <ul className="list-inside list-disc">
-          <li>GPA: 4.16 / 4.30</li>
-        </ul>
+      <div>Aug. 2023 - Dec. 2023</div>
+      <ul className="list-inside list-disc">
+        <li>GPA: 4.0 / 4.0</li>
+      </ul>
+    </div>,
+  ],
+  [
+    <a
+      href="https://www.ntu.edu.tw/english/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      National Taiwan University
+    </a>,
+    <div>
+      <div className="text-black dark:text-white">
+        <b>Bachelor of Science in Engineering</b> at Electrical Engineering
       </div>
-    </td>
-  </>,
+      <div>Sep. 2020 - Jun. 2024</div>
+      <ul className="list-inside list-disc">
+        <li>GPA: 4.16 / 4.30</li>
+      </ul>
+    </div>,
+  ],
 ];
 
 const awardData = [
-  <>
-    <th className="flex w-16 items-center">
-      <p>2024</p>
-    </th>
-    <th className="flex basis-5/12 items-center text-blue-500 dark:text-blue-300">
-      <a
-        href="http://www.phitauphi.org.tw/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline"
-      >
-        The Phi Tau Phi Scholastic Honor Society of the Republic of China <br />{' '}
-        (中華民國斐陶斐榮譽學會)
-      </a>
-    </th>
-    <td className="flex basis-7/12 items-center px-5">Honorary Member</td>
-  </>,
-  <>
-    <th className="flex w-16 items-center">
-      <p>2024</p>
-    </th>
-    <th className="flex basis-5/12 items-center text-blue-500 dark:text-blue-300">
-      <a
-        href="https://make.ntuee.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline"
-      >
-        MakeNTU Hackathon Competition <br /> (臺大創新黑客松)
-      </a>
-    </th>
-    <td className="flex basis-7/12 items-center px-5">
-      <div>Best Creativity Prize, STMicroelectronics Company Prize 1st Place</div>
-    </td>
-  </>,
-  <>
-    <th className="flex w-16 items-center">
-      <p>2023</p>
-    </th>
-    <th className="flex basis-5/12 items-center text-blue-500 dark:text-blue-300">
-      NTUEE Undergraduate Innovation Award <br /> (臺大電機系精專獎)
-    </th>
-    <td className="flex basis-7/12 items-center px-5">Third Prize Project</td>
-  </>,
-  <>
-    <th className="flex w-16 items-center">2020</th>
-    <th className="flex basis-5/12 items-center text-blue-500 dark:text-blue-300">
+  [
+    2024,
+    <a
+      href="http://www.phitauphi.org.tw/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      The Phi Tau Phi Scholastic Honor Society of the Republic of China <br />{' '}
+      (中華民國斐陶斐榮譽學會)
+    </a>,
+    'Honorary Member',
+  ],
+  [
+    2024,
+    <a
+      href="https://make.ntuee.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline"
+    >
+      MakeNTU Hackathon Competition <br /> (臺大創新黑客松)
+    </a>,
+    'Best Creativity Prize, STMicroelectronics Company Prize 1st Place',
+  ],
+  [
+    2023,
+    <>
+      NTUEE Undergraduate Innovation Award <br /> (臺大電機系精專獎)',
+    </>,
+    'Third Prize Project',
+  ],
+  [
+    2020,
+    <>
       Presidential Award <br /> (臺大電機系書卷獎)
-    </th>
-    <td className="flex basis-7/12 items-center px-5">Ranking 3 / 182 in 2020 Fall Semester</td>
-  </>,
-  <>
-    <th className="flex w-16 items-center">2016</th>
-    <th className="flex basis-5/12 items-center text-blue-500 dark:text-blue-300">
-      International Junior Science Olympiad (IJSO)
-    </th>
-    <td className="flex basis-7/12 items-center px-5">
+    </>,
+    'Ranking 3 / 182 in 2020 Fall Semester',
+  ],
+  [
+    2016,
+    'International Junior Science Olympiad (IJSO)',
+    <>
       <div>
-        <b className="text-black dark:text-white">3 Personal Gold Medals:</b> Highest personal score
-        among all international participants. <br />
-        <b className="text-black dark:text-white">1 Team Gold Medal:</b> Highest team score among
-        all countries.
+        <b>3 Personal Gold Medals:</b> Highest personal score among all international participants.{' '}
+        <br />
+        <b>1 Team Gold Medal:</b> Highest team score among all countries.
       </div>
-    </td>
-  </>,
+    </>,
+  ],
 ];
 
 export { descriptionData, title, educationData, awardData };

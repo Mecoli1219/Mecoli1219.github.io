@@ -13,7 +13,10 @@ export default function Education() {
                 className={`flex flex-row ${idx === 0 ? 'border-y' : 'border-b'} p-2 ${idx % 2 === 0 ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
                 key={idx}
               >
-                {education}
+                <th className="flex basis-2/6 items-center">{education[0]}</th>
+                <td className="flex basis-4/6 items-center px-5">
+                  <div>{education[1]}</div>
+                </td>
               </tr>
             ))}
           </tbody>

@@ -13,7 +13,13 @@ export default function Awards() {
                 className={`flex flex-row ${idx === 0 ? 'border-y' : 'border-b'} p-2 px-2 ${idx % 2 === 0 ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
                 key={idx}
               >
-                {award}
+                <th className="flex w-16 items-center">
+                  <p>{award[0]}</p>
+                </th>
+                <th className="flex basis-5/12 items-center text-blue-500 dark:text-blue-300">
+                  {award[1]}
+                </th>
+                <td className="flex basis-7/12 items-center px-5">{award[2]}</td>
               </tr>
             ))}
           </tbody>
