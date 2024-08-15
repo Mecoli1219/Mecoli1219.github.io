@@ -40,7 +40,18 @@ const industryData = [
     </a>,
     <div>
       <div className="text-black dark:text-white">
-        <b>{'Title: '}</b> LLM Research Scientist Intern
+        <b>{'Title: '}</b> AI Research Scientist Intern
+      </div>
+      <div className="text-black dark:text-white">
+        <b>{'Advisor: '}</b>
+        <a
+          href="https://www.linkedin.com/in/icoha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:underline dark:text-blue-300"
+        >
+          Chieh-Yen (Coha) Lin
+        </a>
       </div>
       <div>
         <b className="text-black dark:text-white">{'Dates: '}</b>
