@@ -21,7 +21,7 @@ export default function Navbar() {
     ['Experience', '/experience'],
     ['Publications', '/publications'],
     ['Portfolio', '/portfolio'],
-    ['Resume', '/resume/main.pdf'],
+    ['Resume', '/Resume/resume.pdf'],
   ];
 
   const barHeight: number = 48;

@@ -24,13 +24,18 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 \usepackage{geometry}
+\usepackage{color}
+
+\definecolor{boldcolor}{gray}{0.3} % range from [0,1]
+\newcommand{\lightbold}[1]{\textit{\textbf{\textcolor{boldcolor}{#1}}}}
+
 
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 
 % serif
 % \usepackage{CormorantGaramond}
@@ -85,16 +90,14 @@
 \newcommand{\resumeSubheading}[4]{
     \item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+      \textbf{\normalsize #1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\resumeSubSubheading}[1]{
+    \item \vspace{-2pt}
+    \lightbold{\small #1}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -123,7 +126,7 @@
 %   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
-\input{./components/header.tex}
+\input{./header.tex}
 
 %------RELEVANT COURSEWORK-------
 %\section{Relevant Coursework}
@@ -144,29 +147,28 @@
     %\resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
-\input{./components/education.tex}
+\input{./education.tex}
 \vspace{-10pt}
 
+
 %-----------TECH SKILLS-----------
-\input{./components/skills.tex}
+\input{./skills.tex}
 \vspace{-10pt}
 
 %-----------EXPERIENCE-----------
-\input{./components/experience.tex}
+\input{./experience.tex}
 \vspace{-10pt}
-
 
 %-----------INVOLVEMENT---------------
-\input{./components/extra.tex}
+\input{./extra.tex}
 \vspace{-10pt}
 
+\input{./publication.tex}
 %-----------PROJECTS-----------
-\input{./components/project.tex}
-\vspace{-10pt}
+% \input{../shared/project.tex}
+% \vspace{-10pt}
 
 %-----------PUBLICATIONS-----------
-\input{./components/publication.tex}
-
 
 % \small{
 %   \begin{tabularx}{\linewidth}{@{} p{9cm} X @{}}

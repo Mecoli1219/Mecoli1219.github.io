@@ -1,0 +1,45 @@
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Flyte (K8S Workflow Orchestration Platform For Data \& ML Pipelines)}{04/2024 -- Present}
+    {Open Source Contributor ~~\textbf{|}~~ Go, Python, Docker, Kubernetes}{Remote}
+    \resumeSubSubheading{Jupyter Notebook Support in Flytekit}
+      \resumeItemListStart
+        \resumeItem{Enabled Jupyter notebook support in Flytekit, allowing users to develop and run code remotely from notebook cells. (PR: \href{https://github.com/flyteorg/flytekit/pull/2733}{\underline{\#2733}})}
+        \resumeItem{Implemented pickling techniques to solve Jupyter notebook serialization issues and created comprehensive integration tests.}
+        \resumeItem{Collaborated with Union.ai and open-source community to refine system design. (PR: \href{https://github.com/flyteorg/flytekit/pull/2799}{\underline{\#2799}})}
+        % \resumeItem{}
+      \resumeItemListEnd
+      \resumeSubSubheading{Tuple \& NamedTuple Support in Flyte System (On-going)}
+        \resumeItemListStart
+          \resumeItem{Proposed a new RFC (\href{https://github.com/flyteorg/flyte/pull/5699}{\underline{\#5699}}) to support Tuple and NamedTuple in Flyte, detailing design changes and system-wide impact.}
+          \resumeItem{Designed a new protobuf message in FlyteIDL to support tuple-type data transfer between Flyte components. (PR: \href{https://github.com/flyteorg/flyte/pull/5720}{\underline{\#5720}})}
+          \resumeItem{Enabled Flyte's client libraries (Flytekit and Flytectl) to handle tasks and workflows using Tuple and NamedTuple inputs/outputs. (PR: \href{https://github.com/flyteorg/flytekit/pull/2732}{\underline{\#2732}})}
+          \resumeItem{Implemented logic in Flytekit to support Tuple iteration and aggregation within workflow definitions.}
+        \resumeItemListEnd
+      \resumeSubSubheading{Selected Contributions}
+      \resumeItemListStart
+        \resumeItem{Enabled default labels and annotations for the launch plans automatically created from workflow definitions. (PR: \href{https://github.com/flyteorg/flytekit/pull/2776}{\underline{\#2776}})}
+        \resumeItem{Introduced a bypass for strict type validation in Flytekit, simplifying codebase migration and enhancing flexibility for new users. (PR: \href{https://github.com/flyteorg/flytekit/pull/2419}{\underline{\#2419}})}
+        \resumeItem{Resolved issues with the Any type in Flytekit, enabling proper usage via the command line using the Click package. (PR: \href{https://github.com/flyteorg/flytekit/pull/2463}{\underline{\#2463}})}
+      \resumeItemListEnd
+      % \resumeItemListStart
+      %   \resumeItem{Implemented unsafe typing in Flytekit, simplifying the migration of legacy codebases by bypassing strict type checks.}
+      %   \resumeItem{Fixed the usage of the Any type in Flytekit, allowing the correct use of Any type via the command line with the Click package.}
+      % \resumeItemListEnd
+    
+    \resumeSubheading
+    {Appier}{06/2024 -- 08/2024}
+    {AI Research Scientist Intern}{Taiwan}
+    \resumeItemListStart
+      \resumeItem{Enhanced machine learning algorithms in a recommendation system using Diffusion Models to address data inefficiency and imbalance, reducing performance drop by 25\%.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Taiwan Semiconductor Manufacturing Company(TSMC)}{06/2023 -- 07/2023}
+      {Machine Learning Research Engineer Intern ~~\textbf{|}~~ Python, C, SQL, TensorFlow}{Taiwan}
+      \resumeItemListStart
+        \resumeItem{Designed and developed an innovative pairwise Style Transfer model for super-resolution images (3M pixels per image), resulting in a 50\% reduction in error rates.}
+        \resumeItem{Optimized the data pipeline with Python MPI for image extraction and processing, achieving a 75\% reduction in processing time.}
+        \resumeItem{Implemented TensorFlow distributed computing across 2 nodes with 4 A100 GPUs each, boosting training efficiency by 5 times.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
