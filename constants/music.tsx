@@ -29,9 +29,9 @@ export const musicData: MusicDataType[] = [
     shareURL: 'https://musescore.com/user/11455091/scores/5904894?share=copy_link',
     title: 'Yesterday イエスタデイ - Official髭男dism',
     sampleImg: '/static/portfolio/music/yesterday.webp',
-    views: '7k',
-    likes: '22',
-    stars: 4.9,
+    views: '11k',
+    likes: '65',
+    stars: 5.0,
   },
   {
     state: 'normal',

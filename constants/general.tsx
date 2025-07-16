@@ -1,7 +1,6 @@
 const userData = {
   githubUsername: 'mecoli1219',
   name: 'Chun-Mao Lai',
-  designation: 'Full Stack Developer & Deep Learning Researcher',
   avatarUrl: '/avatar.png',
   email: 'michaellai901026@gmail.com',
   phone: '+886 905267496',

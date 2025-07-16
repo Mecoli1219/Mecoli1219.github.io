@@ -8,22 +8,20 @@ const descriptionData = [
     >
       composing music
     </a>
-    , and building websites.
+    , snowboarding, and building websites.
   </>,
   <>
-    I am a Master of Science student in Computer Science Engineering at the University of California
-    San Diego (UCSD) since 2024. My primary interest is in building user-friendly applications and
-    integrating Artificial Intelligence to improve the quality of life. I am particularly
-    enthusiastic about leveraging Machine Learning to create innovative applications and optimize
-    machine learning pipelines.
+    Currently, I am a Systems & Infrastructure Engineering Intern at LinkedIn, focused on Systems
+    and Machine Learning Systems. I have extensive experience building distributed infrastructure,
+    contributing to open-source projects, and solving complex, real-world problems across data,
+    compute, and coordination layers. I'm particularly enthusiastic to tackle challenging, practical
+    questions that significantly impact users and developers.
   </>,
   <>
-    During my undergraduate studies at National Taiwan University (NTU), I published five papers,
-    showcasing my dedication to advancing AI research. In the meantime, I gained proficiency in a
-    wide range of programming languages, including JavaScript/TypeScript, Python, C/C++, C#, GoLang,
-    and Rust, Verilog, Matlab, among others. I also participated in several projects, including
-    open-source contributions, to enhance my coding skills. I am eager to continue expanding my
-    technical skills and aspire to build impactful and exciting projects in the future.
+    I've actively contributed to open-source projects like Flyte, enhancing Tuple/NamedTuple support
+    and enabling interactive Jupyter integrations on Kubernetes. These experiences sharpened my
+    skills in designing scalable workflows and collaborating across communities to deliver
+    production-ready solutions.
   </>,
   <>
     <b>Fun Fact:</b> <i>&apos;Mecoli&apos;</i> is a playful fusion of Michael Lai&apos;s
@@ -33,7 +31,8 @@ const descriptionData = [
 
 const title = (
   <b>
-    Software Engineer & <br /> Machine Learning Engineer/Researcher
+    {/* Software Engineer & <br /> Machine Learning Engineer/Researcher */}
+    Systems & Infrastructure Engineer
   </b>
 );
 
@@ -51,7 +50,10 @@ const educationData = [
       <div className="text-black dark:text-white">
         <b>Master of Science</b> in Computer Science Engineering
       </div>
-      <div>Sep. 2024 - Jun. 2026</div>
+      <div>Sep. 2024 - Dec. 2025</div>
+      <ul className="list-inside list-disc">
+        <li>GPA: 3.93 / 4.0</li>
+      </ul>
     </div>,
   ],
   [
@@ -88,7 +90,7 @@ const educationData = [
       </div>
       <div>Sep. 2020 - Jun. 2024</div>
       <ul className="list-inside list-disc">
-        <li>GPA: 4.16 / 4.30</li>
+        <li>GPA: 3.97 / 4.0</li>
       </ul>
     </div>,
   ],

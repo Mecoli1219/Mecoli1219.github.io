@@ -2,6 +2,7 @@ import Extra from '../components/Experience/Extra';
 import Research from '../components/Experience/Research';
 import Skills from '../components/Experience/Skills';
 import Work from '../components/Experience/Work';
+import OpenSource from '../components/Experience/OpenSource';
 
 function Experience() {
   return (
@@ -15,6 +16,7 @@ function Experience() {
         </div>
         <div className="mx-auto mt-10 box-border flex w-full flex-col items-center space-y-16 px-5 max-sm:px-0">
           <Work />
+          <OpenSource />
           <Research />
           <Extra />
           <Skills />

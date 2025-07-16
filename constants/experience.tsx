@@ -1,31 +1,20 @@
 const industryData = [
   [
     <a
-      href="https://www.union.ai/"
+      href="https://about.linkedin.com/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline dark:text-blue-300"
     >
-      Union.ai
+      LinkedIn Corporation
     </a>,
     <div>
       <div className="text-black dark:text-white">
-        <b>{'Title: '}</b> Open Source Contributor
-      </div>
-      <div className="text-black dark:text-white">
-        <b>{'Project: '}</b>{' '}
-        <a
-          href="https://github.com/flyteorg"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Flyte
-        </a>
+        <b>{'Title: '}</b> Systems & Infrastructure Engineer Intern
       </div>
       <div>
         <b className="text-black dark:text-white">{'Dates: '}</b>
-        Apr. 2024 - Present
+        Jun. 2025 - Sep. 2025
       </div>
     </div>,
   ],
@@ -86,6 +75,102 @@ const industryData = [
       <div>
         <b className="text-black dark:text-white">{'Dates: '}</b>
         Jun. 2023 - Jul. 2023
+      </div>
+    </div>,
+  ],
+];
+
+const openSourceData = [
+  [
+    <a
+      href="https://github.com/flyteorg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      Flyte
+    </a>,
+    <div>
+      <div className="text-black dark:text-white">
+        <b>{'Title: '}</b> Flyte & Flytekit Committer
+      </div>
+      <div>
+        <b className="text-black dark:text-white">{'Dates: '}</b>
+        Apr. 2024 - Present
+      </div>
+      <div className="text-black dark:text-white">
+        <b>
+          <a
+            href="https://github.com/search?q=org%3Aflyteorg+author%3Amecoli1219&type=pullrequests"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline dark:text-blue-300"
+          >
+            {'Contributions'}
+          </a>
+        </b>{' '}
+      </div>
+    </div>,
+  ],
+  [
+    <a
+      href="https://github.com/linkedin/Liger-Kernel"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      Liger-Kernel
+    </a>,
+    <div>
+      <div className="text-black dark:text-white">
+        <b>{'Title: '}</b> Open Source Contributor
+      </div>
+      <div>
+        <b className="text-black dark:text-white">{'Dates: '}</b>
+        Nov. 2024 - Feb. 2025
+      </div>
+      <div className="text-black dark:text-white">
+        <b>
+          <a
+            href="https://github.com/linkedin/Liger-Kernel/pulls?q=is:pr+author:Mecoli1219"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline dark:text-blue-300"
+          >
+            {'Contributions'}
+          </a>
+        </b>{' '}
+      </div>
+    </div>,
+  ],
+  [
+    <a
+      href="https://github.com/huggingface/trl"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      HuggingFace TRL
+    </a>,
+    <div>
+      <div className="text-black dark:text-white">
+        <b>{'Title: '}</b> Open Source Contributor
+      </div>
+      <div>
+        <b className="text-black dark:text-white">{'Dates: '}</b>
+        Nov. 2024 - Feb. 2025
+      </div>
+      <div className="text-black dark:text-white">
+        <b>
+          <a
+            href="https://github.com/huggingface/trl/pulls?q=+is:pr+author:Mecoli1219+"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline dark:text-blue-300"
+          >
+            {'Contributions'}
+          </a>
+        </b>{' '}
       </div>
     </div>,
   ],
@@ -247,4 +332,4 @@ const researchData = [
   ],
 ];
 
-export { industryData, researchData };
+export { industryData, researchData, openSourceData };
